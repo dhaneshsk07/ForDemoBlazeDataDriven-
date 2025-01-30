@@ -1,19 +1,12 @@
 package nnd.Utilities;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.WebDriver;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelReader {
-	
 
 	String excelPath = "C:\\Users\\dhane\\eclipse-workspace\\TestProject\\src\\test\\java\\nnd\\TestData\\TestData.xlsx";
 	String username;
@@ -37,15 +30,9 @@ public class ExcelReader {
 
 		System.out.println("Username : " + username);
 		System.out.println("Password : " + password);
-		/*
-		 * if(file.exists()) { System.out.println("File Exist"); }else
-		 * System.out.println("File Missing");
-		 */
-		
-		workbook.close();
-        return new String[] { username, password };
-	}
 
-	
+		workbook.close();
+		return new String[] { username, password };
+	}
 
 }

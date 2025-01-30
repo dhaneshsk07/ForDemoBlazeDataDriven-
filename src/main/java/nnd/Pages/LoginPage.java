@@ -29,32 +29,30 @@ public class LoginPage {
 
 	public void loginUser() throws InvalidFormatException, IOException {
 
-		//homePageLogin = driver.findElement(By.xpath("//a[@class='dropdown-item' and text()='Login']"));
-		
+		//login
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		homePageLogin = driver.findElement(By.xpath("//a[@class='dropdown-item' and text()='Login']"));
 		js.executeScript("arguments[0].click();",homePageLogin);
 
-		//homePageLogin.click();
-		
-		usrname = driver.findElement(By.xpath("//input[@name='email']"));
-		//username.sendKeys("dhan6000@gmail.com"); 
-		
 		ExcelReader rd =new ExcelReader();
 		// Fetch username and password from Excel
         String[] credentials = rd.readeExcel();
         String username = credentials[0];
         String password = credentials[1];
-
-		usrname.sendKeys(username);
-		pwd = driver.findElement(By.xpath("//input[@name='password']"));
-		//password.sendKeys("Dhan@6000");
-		pwd.sendKeys(password);
 		
+        //email
+		usrname = driver.findElement(By.xpath("//input[@name='email']"));
+		usrname.sendKeys(username);   //username.sendKeys("dhan6000@gmail.com"); 
+		
+		//password
+		pwd = driver.findElement(By.xpath("//input[@name='password']"));
+		pwd.sendKeys(password);       //password.sendKeys("Dhan@6000");
+		
+		//login button
 		loginBtn = driver.findElement(By.xpath("//button[text()='Login']"));
 		loginBtn.click();
 		
-		  // Assert the URL to confirm successful login
+		 // Assert the URL to confirm successful login
         String expectedUrl = "https://demo.opencart.com/en-gb?route=account/login"; // Replace with the actual URL
         String actualUrl = driver.getCurrentUrl();
         System.out.println("current url is : " + actualUrl);
