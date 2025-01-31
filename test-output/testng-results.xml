@@ -2,20 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-30T23:57:44 IST" name="Default suite" finished-at="2025-01-30T23:58:01 IST" duration-ms="16730">
+  <suite started-at="2025-02-01T02:33:01 IST" name="Default suite" finished-at="2025-02-01T02:33:18 IST" duration-ms="16977">
     <groups>
     </groups>
-    <test started-at="2025-01-30T23:57:44 IST" name="Default test" finished-at="2025-01-30T23:58:01 IST" duration-ms="16730">
+    <test started-at="2025-02-01T02:33:01 IST" name="Default test" finished-at="2025-02-01T02:33:18 IST" duration-ms="16977">
       <class name="nnd.TestCases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:nnd.TestCases.LoginTest@35d6ca49]" started-at="2025-01-30T23:57:44 IST" name="setUp" finished-at="2025-01-30T23:57:49 IST" duration-ms="5203" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.LoginTest@64712be]" started-at="2025-02-01T02:33:01 IST" name="setUp" finished-at="2025-02-01T02:33:05 IST" duration-ms="3996" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void nnd.TestCases.LoginTest.ValidUserLogin() throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@743e5472]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ValidUserLogin()[pri:0, instance:nnd.TestCases.LoginTest@35d6ca49]" started-at="2025-01-30T23:57:49 IST" name="ValidUserLogin" description="test01" finished-at="2025-01-30T23:58:00 IST" duration-ms="11140" status="PASS">
+        <test-method signature="ValidUserLogin()[pri:0, instance:nnd.TestCases.LoginTest@64712be]" started-at="2025-02-01T02:33:05 IST" name="ValidUserLogin" description="test01" finished-at="2025-02-01T02:33:18 IST" duration-ms="12566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidUserLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.LoginTest@35d6ca49]" started-at="2025-01-30T23:58:00 IST" name="tearDown" finished-at="2025-01-30T23:58:01 IST" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.LoginTest@64712be]" started-at="2025-02-01T02:33:18 IST" name="tearDown" finished-at="2025-02-01T02:33:18 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

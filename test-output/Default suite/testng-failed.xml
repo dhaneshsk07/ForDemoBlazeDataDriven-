@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="nnd.TestCases.LoginTest">
+      <class name="nnd.TestCases.RegisterPageTest">
         <methods>
+          <include name="test1"/>
           <include name="setUp"/>
-          <include name="ValidUserLogin"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- nnd.TestCases.LoginTest -->
+      </class> <!-- nnd.TestCases.RegisterPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
