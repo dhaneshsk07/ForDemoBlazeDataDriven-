@@ -25,6 +25,8 @@
     <artifactId>extentreports</artifactId>
     <version>5.1.0</version> <!-- Or the latest version -->
 </dependency>
+
+ 
   
   <dependency>
         <groupId>org.apache.poi</groupId>

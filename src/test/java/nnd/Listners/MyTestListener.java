@@ -56,7 +56,7 @@ public class MyTestListener implements ITestListener {
 
 		System.out.println("Test Failed: " + result.getName());
 		System.out.println("Failure Reason: " + result.getThrowable());
-
+ 
 	}
 
 	@Override
@@ -75,11 +75,12 @@ public class MyTestListener implements ITestListener {
 		System.out.println("Test Failed but within success percentage: " + result.getName());
 	}
 
-	@Override
+	@Override 
 	public void onStart(ITestContext context) {
 
+		String extentPath= "C:\\Users\\dhane\\eclipse-workspace\\OpenCart26012025\\test-output\\";
 		// Extent reports- Use ExtentSparkReporter instead of ExtentHtmlReporter
-		ExtentSparkReporter sparkReporter = new ExtentSparkReporter("extentReport.html");
+		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(extentPath + "extentReport.html");
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
 
