@@ -92,13 +92,27 @@ public class MyTestListener implements ITestListener {
 	@Override 
 	public void onStart(ITestContext context) {
 
+		
+		
+		//For Genkins
+		//String genkinsExtentPath= "C:\\Users\\dhane\\eclipse-workspace\\OpenCart26012025\\test-output\\genkins-extentReports\\";
+		
+		
+		
+		//for genkins
+		String buildNumber = System.getenv("BUILD_NUMBER");
+		String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_" + buildNumber + ".html";
+		
+		ExtentSparkReporter sparkReporterGenkins = new ExtentSparkReporter(reportPath);
+		extent = new ExtentReports();
+		extent.attachReporter(sparkReporterGenkins);
+		
+		
+		//for ECLIPSE
 		String extentPath= "C:\\Users\\dhane\\eclipse-workspace\\OpenCart26012025\\test-output\\extent-Reports\\";
 		// Extent reports- Use ExtentSparkReporter instead of ExtentHtmlReporter
-		
 		//to removing duplicationof extentReport.html file
 		String reportFilePath = "extent-report-" + System.currentTimeMillis() + ".html";  // or use build number
-		
-
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(extentPath + reportFilePath);
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
