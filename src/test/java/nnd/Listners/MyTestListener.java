@@ -14,6 +14,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
 import nnd.Utilities.Screenshot;
 
 public class MyTestListener implements ITestListener {
@@ -133,6 +135,7 @@ public class MyTestListener implements ITestListener {
 		String reportFilePath = "extent-report-" + System.currentTimeMillis() + ".html";  // or use build number
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(extentPath + reportFilePath);
 		//extent = new ExtentReports();
+		 sparkReporter.config().setTheme(Theme.STANDARD);
 		extent.attachReporter(sparkReporter);
 		
 		
