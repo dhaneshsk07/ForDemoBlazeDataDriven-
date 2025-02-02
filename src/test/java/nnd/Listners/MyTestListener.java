@@ -103,15 +103,28 @@ public class MyTestListener implements ITestListener {
 		//for genkins
 		String buildNumber = System.getenv("BUILD_NUMBER");
 		
+		if(buildNumber!=null) {
+		
 		System.out.println("the build number is : " + buildNumber);
 		//String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_" + buildNumber + ".html";
 		String reportPath = System.getProperty("user.dir") + "\\" + "reports" + "\\" + "ExtentReport_" + buildNumber + ".html";
-
 		
 		ExtentSparkReporter sparkReporterGenkins = new ExtentSparkReporter(reportPath);
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporterGenkins); 
+			
+		}else {
+			
+			
+		System.out.println("the build number is : " + buildNumber);
+		//String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_" + buildNumber + ".html";
+		String reportPath = System.getProperty("user.dir") + "\\" + "reports" + "\\" + "ExtentReport_" + "localBuild" + ".html";
 		
+		
+		ExtentSparkReporter sparkReporterGenkins = new ExtentSparkReporter(reportPath);
+		extent = new ExtentReports();
+		extent.attachReporter(sparkReporterGenkins); 
+		}
 		
 		//for ECLIPSE
 		String extentPath= "C:\\Users\\dhane\\eclipse-workspace\\OpenCart26012025\\test-output\\extent-Reports\\";
