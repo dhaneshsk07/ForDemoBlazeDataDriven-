@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class LoginTest extends ConnectionSetup {
 	
 	
-	@Test(description="test01")
+	@Test(description="LoginTest_TC01 Valid User Login")
 	public void ValidUserLogin() throws InvalidFormatException, IOException {
 		
 		

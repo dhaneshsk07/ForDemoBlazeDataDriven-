@@ -59,7 +59,7 @@ public class ConnectionSetup {
 
 		// Quit the WebDriver after each test
 		if (driver != null) {
-			// driver.quit();
+			 driver.quit();
 		}
 
 	}
