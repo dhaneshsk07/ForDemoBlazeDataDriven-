@@ -101,8 +101,8 @@ public class MyTestListener implements ITestListener {
 		
 		
 		//for genkins
-		//String buildNumber = System.getenv("BUILD_NUMBER");
-		String buildNumber = "1234";
+		String buildNumber = System.getenv("BUILD_NUMBER");
+		
 		System.out.println("the build number is : " + buildNumber);
 		//String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_" + buildNumber + ".html";
 		String reportPath = System.getProperty("user.dir") + "\\" + "reports" + "\\" + "ExtentReport_" + buildNumber + ".html";
