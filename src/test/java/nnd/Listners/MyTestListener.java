@@ -1,5 +1,6 @@
 package nnd.Listners;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
@@ -100,12 +101,16 @@ public class MyTestListener implements ITestListener {
 		
 		
 		//for genkins
-		String buildNumber = System.getenv("BUILD_NUMBER");
-		String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_" + buildNumber + ".html";
+		//String buildNumber = System.getenv("BUILD_NUMBER");
+		String buildNumber = "1234";
+		System.out.println("the build number is : " + buildNumber);
+		//String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_" + buildNumber + ".html";
+		String reportPath = System.getProperty("user.dir") + "\\" + "reports" + "\\" + "ExtentReport_" + buildNumber + ".html";
+
 		
 		ExtentSparkReporter sparkReporterGenkins = new ExtentSparkReporter(reportPath);
 		extent = new ExtentReports();
-		extent.attachReporter(sparkReporterGenkins);
+		extent.attachReporter(sparkReporterGenkins); 
 		
 		
 		//for ECLIPSE
@@ -114,7 +119,7 @@ public class MyTestListener implements ITestListener {
 		//to removing duplicationof extentReport.html file
 		String reportFilePath = "extent-report-" + System.currentTimeMillis() + ".html";  // or use build number
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(extentPath + reportFilePath);
-		extent = new ExtentReports();
+		//extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
 		
 		
