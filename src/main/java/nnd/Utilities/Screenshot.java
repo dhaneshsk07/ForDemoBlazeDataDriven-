@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 
 
 public class Screenshot  {
-	WebDriver driver;
+	static WebDriver driver;
 	
 	public Screenshot(WebDriver driver) {
 		// TODO Auto-generated constructor stub
@@ -21,7 +21,7 @@ public class Screenshot  {
 
 	public void takeScreenshot(ITestResult result) throws IOException {
 	 // Capture screenshot
-    TakesScreenshot ts = (TakesScreenshot) driver;
+    TakesScreenshot ts = (TakesScreenshot) driver; 
     File source = ts.getScreenshotAs(OutputType.FILE);
     
     // Set screenshot name with timestamp
@@ -31,12 +31,22 @@ public class Screenshot  {
     
     // Save the screenshot
     FileHandler.copy(source, destination); 
-     
+    
+    FileHandler.makeWritable(destination);
 
 
 
 
 }
+	
+	 public void makeWritable(File destination) {
+	        if (destination.exists()) {
+	            destination.setWritable(true);  // Writable permission set ചെയ്യുന്നു
+	        } else {
+	            System.out.println("ഫയൽ അല്ലെങ്കിൽ ഡയറക്ടറി ഇല്ല.");
+	        }
+	    }
+
 }
 
 
