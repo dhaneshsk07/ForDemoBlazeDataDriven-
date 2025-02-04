@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your/repository.git' // Replace with your repository URL
+                git 'https://github.com/dhaneshsk07/ForOpenCart.git' // Replace with your repository URL
             }
         }
         stage('Build and Test') {
@@ -16,10 +16,10 @@ pipeline {
             }
         }
     }
-    post {
+   post {
         always {
-            // Archive test results, you can modify this to suit your needs
-            junit '**/target/test-*.xml' // Adjust path to match your test result format
+            // Archive TestNG reports
+            junit '**/test-output/testng-*.xml' // Adjust path if needed
         }
     }
 }
