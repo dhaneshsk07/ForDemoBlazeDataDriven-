@@ -1,26 +1,25 @@
 pipeline {
     agent any
-
+    
     stages {
-        
-        stage('Build') {
+        stage('Checkout') {
             steps {
-				git 'https://github.com/dhaneshsk07/ForOpenCart.git' // Replace with your repository URL
-                echo 'Building the application...'
-                // Add commands for your build process
+                git 'https://github.com/your/repository.git' // Replace with your repository URL
             }
         }
-        stage('Test') {
+        stage('Build and Test') {
             steps {
-                echo 'Running tests...'
-                // Add commands for running your tests
+                script {
+                    // Ensure Maven is installed
+                    sh 'mvn clean test' // Runs mvn test
+                }
             }
         }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying application...'
-                // Add commands for deploying your app
-            }
+    }
+    post {
+        always {
+            // Archive test results, you can modify this to suit your needs
+            junit '**/target/test-*.xml' // Adjust path to match your test result format
         }
     }
 }
