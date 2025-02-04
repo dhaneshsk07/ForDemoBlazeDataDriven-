@@ -1,4 +1,4 @@
-package nnd.TestCases;
+package Experimental;
 
 import java.util.List;
 import org.openqa.selenium.By;
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.JavascriptExecutor;
 import java.time.Duration;
 
-public class ClickElement {
+public class GoogleSearchAElement {
     public static void main(String[] args) throws InterruptedException {
         //System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
         WebDriver driver = new ChromeDriver();
@@ -46,7 +46,7 @@ public class ClickElement {
         // Press ENTER to search instead of clicking the button
         searchBox.sendKeys(Keys.ENTER);
 
-        driver.quit();
+        driver.quit(); 
         
     }
 }

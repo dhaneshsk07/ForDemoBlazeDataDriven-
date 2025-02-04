@@ -60,6 +60,15 @@ public class LoginPage {
         	
 	}
 	
+	public void desktopItemCheck() {
+	WebElement homePageLogin = driver.findElement(By.xpath("//a[@href='https://demo.opencart.com/en-gb/catalog/desktops/pc']"));
+	
+	Select sel=new Select(homePageLogin);
+	sel.selectByVisibleText("PC (0)");
+	
+	System.out.println("Desktop item is : "  );
+	}
+	
 	
 }
 

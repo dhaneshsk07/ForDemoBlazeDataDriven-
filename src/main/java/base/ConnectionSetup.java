@@ -95,6 +95,7 @@ public class ConnectionSetup {
 		// explicit wait
 		waitForSomeTime();
 
+		//ADD THIS BELOW TO RUN OPENCART PROJECT
 		driver.get("https://demo.opencart.com");
 	}
 	
