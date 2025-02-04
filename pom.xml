@@ -22,11 +22,12 @@
   
   
    <!-- for maven run test -->
+   <!--
   <dependency>
         <groupId>org.apache.maven.surefire</groupId>
         <artifactId>surefire-testng</artifactId>
-        <version>2.22.2</version>  <!-- Or another version -->
-    </dependency>
+        <version>2.22.2</version>  
+    </dependency> -->
   
   
   <dependency>
@@ -68,8 +69,8 @@
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>7.10.2</version>
-    <scope>test</scope>
+    <version>7.8.0</version>
+    
 </dependency>
 
   </dependencies>
@@ -89,8 +90,14 @@
           <version>3.1.0</version>
         </plugin>
         <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
+           <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.11.0</version>  <!-- Updated version -->
+            <configuration>
+                <source>21</source>
+                <target>21</target>
+            </configuration>
+            
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
