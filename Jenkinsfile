@@ -1,25 +1,26 @@
 pipeline {
     agent any
-    
+
     stages {
-        stage('Checkout') {
+        
+        stage('Build') {
             steps {
-                git 'https://github.com/dhaneshsk07/ForOpenCart.git' // Replace with your repository URL
+				git 'https://github.com/dhaneshsk07/ForOpenCart.git' // Replace with your repository URL
+                echo 'Building the application...'
+                // Add commands for your build process
             }
         }
-        stage('Build and Test') {
+        stage('Test') {
             steps {
-                script {
-                    // Ensure Maven is installed
-                    sh 'mvn clean test' // Runs mvn test
-                }
+                echo 'Running tests...'
+                // Add commands for running your tests
             }
         }
-    }
-    post {
-        always {
-            // Archive test results, you can modify this to suit your needs
-           
+        stage('Deploy') {
+            steps {
+                echo 'Deploying application...'
+                // Add commands for deploying your app
+            }
         }
     }
 }
