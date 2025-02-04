@@ -6,7 +6,6 @@
       <class name="nnd.TestCases.LoginTest">
         <methods>
           <include name="setUp"/>
-          <include name="ValidUserLogin"/>
           <include name="tearDown"/>
           <include name="desktopItemccHECK"/>
         </methods>

@@ -11,9 +11,11 @@ pipeline {
             steps {
                 script {
                     // Ensure Maven is installed
-                    sh 'mvn clean install' //install maven
+                    bat 'mvn clean install test' //install & run mvn test
 
-                    sh 'mvn clean test' // Runs mvn test
+                    //bat 'mvn clean test' // Runs mvn test
+                    
+                    
                 }
             }
         }
