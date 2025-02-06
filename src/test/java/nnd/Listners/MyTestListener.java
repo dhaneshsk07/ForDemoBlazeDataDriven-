@@ -25,10 +25,11 @@ public class MyTestListener implements ITestListener {
 	public void onTestStart(ITestResult result) {
 
 		// extent report - Create a new test in ExtentReports when the test starts
-		test = extent.createTest(result.getMethod().getMethodName());
+		test = extent.createTest(result.getMethod().getMethodName()); 
 
 		test.log(Status.INFO, " Test Started"); // exp_code
-
+		
+	    test.log(Status.INFO, " Test Started"); // exp_code
 		System.out.println("Test Started: " + result.getName());
 	}
 
@@ -105,10 +106,7 @@ public class MyTestListener implements ITestListener {
 	@Override
 	public void onStart(ITestContext context) {
 
-		// For Genkins
-		// String genkinsExtentPath=
-		// "C:\\Users\\dhane\\eclipse-workspace\\OpenCart26012025\\test-output\\genkins-extentReports\\";
-
+	
 		// for genkins
 		String buildNumber = System.getenv("BUILD_NUMBER");
 
@@ -132,7 +130,7 @@ public class MyTestListener implements ITestListener {
 			String reportPath = System.getProperty("user.dir") + "\\" + "reports" + "\\" + "ExtentReport_"
 					+ "localBuild" + ".html";
 
-			ExtentSparkReporter sparkReporterGenkins = new ExtentSparkReporter(reportPath);
+			ExtentSparkReporter sparkReporterGenkins = new ExtentSparkReporter(reportPath); 
 			extent = new ExtentReports();
 			extent.attachReporter(sparkReporterGenkins);
 		}

@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="2" parallel="tests" name="OpenCart Functional Tests(failed)">
     <classes>
-      <class name="nnd.TestCases.RegisterPageTest">
+      <class name="nnd.TestCases.RegisterTest">
         <methods>
-          <include name="test1"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- nnd.TestCases.RegisterPageTest -->
+      </class> <!-- nnd.TestCases.RegisterTest -->
     </classes>
   </test> <!-- OpenCart Functional Tests(failed) -->
 </suite> <!-- Failed suite [OpenCart Suite] -->

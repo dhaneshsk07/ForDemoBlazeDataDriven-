@@ -98,6 +98,7 @@ public class ConnectionSetup {
 
 		// Adding a delay using WebDriverWait before closing the browser
 		waitForSomeTime();
+		driver.close();
 
 		// Quit the WebDriver after each test
 		if (driver != null) {

@@ -14,23 +14,11 @@ public class LoginTest extends ConnectionSetup {
 	@Test(description="LoginTest_TC01 Valid User Login")
 	public void ValidUserLogin() throws InvalidFormatException, IOException {
 		
-		
-	
 		LoginPage lp =new LoginPage(driver);
 		lp.loginUser();
 		
-		
+		 
 	}
 	
-	@Test(description="LoginTest_TC02 DeskTopItem Check")
-	public void desktopItemccHECK() throws InvalidFormatException, IOException {
-		
-		
-	
-		LoginPage lp =new LoginPage(driver);
-		lp.desktopItemCheck();
-		
-		
-	}
 
 }

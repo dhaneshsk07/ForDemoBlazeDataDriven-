@@ -11,7 +11,7 @@
       
         <classes>
             <!-- Replace with actual package names and test classes -->
-            <class name="nnd.TestCases.RegisterPageTest"/>
+            <class name="nnd.TestCases.RegisterTest"/>
             <class name="nnd.TestCases.LoginTest"/>
         </classes>
     </test>
