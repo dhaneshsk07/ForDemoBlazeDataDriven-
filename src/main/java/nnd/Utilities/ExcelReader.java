@@ -12,6 +12,15 @@ public class ExcelReader {
 	String username;
 	String password;
 	String firstName,LastName,email,passwordReg;
+	
+	public String[] excelDD() throws IOException {
+		
+		// File file=new File(excelPath);
+				FileInputStream fs = new FileInputStream(excelPath);
+				Workbook workbook = new XSSFWorkbook(fs);
+				
+				return new String[] { username, password };
+	}
 
 	public String[] readExcelDataForLogin() throws InvalidFormatException, IOException {
 

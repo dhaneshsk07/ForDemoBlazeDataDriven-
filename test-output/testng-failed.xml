@@ -5,9 +5,9 @@
     <classes>
       <class name="nnd.TestCases.RegisterTest">
         <methods>
-          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="test1"/>
+          <include name="validUserSignUp" invocation-numbers="0 1"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- nnd.TestCases.RegisterTest -->
     </classes>

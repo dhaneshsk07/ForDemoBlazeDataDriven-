@@ -20,12 +20,14 @@ import org.testng.ITestContext;
 //import com.aventstack.extentreports.ExtentReports;
 //import com.aventstack.extentreports.ExtentTest;
 
-public class ConnectionSetup {
+public class DB_ConnectionSetup {
 	protected WebDriver driver;
 	WebDriverWait wait;
 
 	@BeforeMethod
 	public void setUp(Method method, ITestContext context) {
+
+		
 
 		// Set up ChromeDriver automatically using WebDriverManager
 		
@@ -67,7 +69,7 @@ public class ConnectionSetup {
             break;
         case "edge":
             WebDriverManager.edgedriver().setup();
-            driver = new EdgeDriver();
+            driver = new EdgeDriver(); 
             break;
         default:
             throw new IllegalArgumentException("Invalid browser: " + browser);
@@ -89,8 +91,10 @@ public class ConnectionSetup {
 		waitForSomeTime();
 
 		//ADD THIS BELOW TO RUN OPENCART PROJECT
-		driver.get("https://demo.opencart.com");
+		driver.get("https://www.demoblaze.com");
 	}
+	
+
 	
 
 	@AfterMethod

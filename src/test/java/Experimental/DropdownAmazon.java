@@ -11,9 +11,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import base.ConnectionSetup;
+import base.DB_ConnectionSetup;
 
-public class DropdownAmazon extends ConnectionSetup {
+public class DropdownAmazon extends DB_ConnectionSetup {
 
 	@Test
 	public void dd() {

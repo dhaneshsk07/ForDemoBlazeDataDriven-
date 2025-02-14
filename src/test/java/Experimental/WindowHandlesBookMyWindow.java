@@ -6,11 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import base.ConnectionSetup;
+import base.DB_ConnectionSetup;
 
 import java.util.Set;
 
-public class WindowHandlesBookMyWindow extends ConnectionSetup{
+public class WindowHandlesBookMyWindow extends DB_ConnectionSetup{
 	
 	@Test
     public void windowhandle() {

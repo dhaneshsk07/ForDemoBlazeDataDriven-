@@ -7,9 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-import base.ConnectionSetup;
+import base.DB_ConnectionSetup;
 
-public class DragAndDropExample extends ConnectionSetup{
+public class DragAndDropExample extends DB_ConnectionSetup{
 	
 	@Test
     public void draganddrop() {
