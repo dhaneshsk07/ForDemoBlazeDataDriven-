@@ -56,7 +56,7 @@ public class DB_LoginTest extends DB_ConnectionSetup {
 	}
 
 	@Test(groups = {
-			"Positive TestCases" }, dataProvider = "validloginData", description = "LoginTest_TC01 Valid User Login", enabled = false)
+			"Positive TestCases" }, dataProvider = "validloginData", description = "LoginTest_TC01 Valid User Login", enabled = true)
 	public void validUserLogin(String username, String password)
 			throws InvalidFormatException, IOException, InterruptedException {
 	

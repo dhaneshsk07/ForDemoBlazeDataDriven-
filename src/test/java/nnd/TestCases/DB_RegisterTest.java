@@ -41,7 +41,7 @@ public class DB_RegisterTest extends DB_ConnectionSetup{
         int rows = sheet.getPhysicalNumberOfRows();
         int cols = sheet.getRow(0).getPhysicalNumberOfCells();
 
-        Object[][] data = new Object[rows-1][cols];  // exclude header row
+        Object[][] data = new Object[rows-1][cols];  // exclude header row 
         for (int i = 1; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 data[i-1][j] = sheet.getRow(i).getCell(j).toString();
@@ -51,7 +51,7 @@ public class DB_RegisterTest extends DB_ConnectionSetup{
         return data;
     }
 
-	@Test(description="valid user sign Up ",dataProvider="testData",enabled=false)
+	@Test(description="valid user sign Up ",dataProvider="testData",enabled=true)
 	public void validUserSignUp(String username,String password) throws InterruptedException {
 		
 		DB_RegisterPage reg=new DB_RegisterPage(driver);

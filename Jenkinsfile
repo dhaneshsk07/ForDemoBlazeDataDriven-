@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/dhaneshsk07/ForOpenCart.git' // Replace with your repository URL
+                git 'https://github.com/dhaneshsk07/ForDemoBlazeDataDriven-.git' // Replace with your repository URL
             }
         }
         stage('Build and Test') {
@@ -24,6 +24,9 @@ pipeline {
         always {
             // Archive TestNG reports
             junit '**/test-output/testng-*.xml' // Adjust path if needed
+            
+            // Archive Extent Reports
+            archiveArtifacts artifacts: '**/test-output/ExtentReports/*.html', allowEmptyArchive: true
         }
     }
 }

@@ -32,12 +32,6 @@ public class DB_HomeTest extends DB_ConnectionSetup {
 
 	}
 
-	@Test( description = "HomeTest_TC02", enabled = false)
-	public void inValidUserLogin(String username, String password)
-			throws InvalidFormatException, IOException, InterruptedException {
-		DB_HomePage hp=new DB_HomePage(driver);
-		
-
-	}
+	
 
 }
