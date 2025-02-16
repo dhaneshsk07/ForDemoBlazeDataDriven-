@@ -17,7 +17,7 @@ pipeline {
     post {
         always {
             // Archive TestNG reports
-            junit '**/test-output/testng-*.xml'
+            //junit '**/test-output/testng-*.xml'
             
             // Archive Extent Reports
             archiveArtifacts artifacts: '**/test-output/extent-Reports/*.html', allowEmptyArchive: true
