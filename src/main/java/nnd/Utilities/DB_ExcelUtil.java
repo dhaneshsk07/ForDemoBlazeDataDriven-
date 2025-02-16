@@ -22,7 +22,7 @@ public class DB_ExcelUtil {
     }
 
     public static int getRowCount() {
-        return sheet.getPhysicalNumberOfRows();
+        return sheet.getPhysicalNumberOfRows();   
     }
 }
 

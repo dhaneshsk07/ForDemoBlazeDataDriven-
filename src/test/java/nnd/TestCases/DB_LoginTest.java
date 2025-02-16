@@ -7,10 +7,6 @@ import org.slf4j.LoggerFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-
 import base.DB_ConnectionSetup;
 import nnd.Pages.DB_LoginPage;
 import nnd.Utilities.DB_ExcelUtil;

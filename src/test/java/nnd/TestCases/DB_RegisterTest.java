@@ -2,18 +2,12 @@ package nnd.TestCases;
 
 import nnd.Pages.DB_RegisterPage;
 import nnd.Utilities.DB_ConfigReader;
-
 import java.io.FileInputStream;
 import java.io.IOException;
-
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import base.DB_ConnectionSetup;
-
-
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;

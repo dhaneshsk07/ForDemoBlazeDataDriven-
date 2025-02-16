@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build and Test') {
             steps {
-                dir('C:\\Users\\dhane\\.jenkins\\workspace\\DemoBlazePipelineJob') { 
+                dir("${WORKSPACE}") { 
                     bat 'mvn clean install test'
                 }
             }
@@ -16,11 +16,11 @@ pipeline {
     }
     post {
         always {
-            // Archive TestNG reports 
+            // Archive TestNG reports
             junit '**/test-output/testng-*.xml'
             
             // Archive Extent Reports
-            archiveArtifacts artifacts: '**/test-output/ExtentReports/*.html', allowEmptyArchive: true
+            archiveArtifacts artifacts: '**/test-output/extent-Reports/*.html', allowEmptyArchive: true
         }
     }
 }

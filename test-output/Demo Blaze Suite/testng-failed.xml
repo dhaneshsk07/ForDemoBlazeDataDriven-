@@ -6,20 +6,20 @@
   </listeners>
   <test thread-count="2" name="Demo Blaze Functional Tests(failed)">
     <classes>
+      <class name="nnd.TestCases.DB_RegisterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validUserSignUp" invocation-numbers="0 1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nnd.TestCases.DB_RegisterTest -->
       <class name="nnd.TestCases.DB_LoginTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="validUserLogin" invocation-numbers="1"/>
+          <include name="inValidUserLogin" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- nnd.TestCases.DB_LoginTest -->
-      <class name="nnd.TestCases.DB_HomeTest">
-        <methods>
-          <include name="verifyPurchaseItem"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- nnd.TestCases.DB_HomeTest -->
     </classes>
   </test> <!-- Demo Blaze Functional Tests(failed) -->
 </suite> <!-- Failed suite [Demo Blaze Suite] -->
