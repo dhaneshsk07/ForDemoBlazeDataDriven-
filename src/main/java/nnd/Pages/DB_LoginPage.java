@@ -100,17 +100,6 @@ public class DB_LoginPage {
 	}
 	
 	public void loginAlertHandle() {
-		/*
-		Alert alert = driver.switchTo().alert();
-		System.out.println("Alert Text: " + alert.getText());
-		String actual=alert.getText();
-		alert.accept();
-		
-		String expected ="Log in successful." ;
-		
-		Assert.assertEquals(actual,expected ,"Log in failed");
-		*/
-		
 		
 		try {
 		    Alert alert = driver.switchTo().alert();

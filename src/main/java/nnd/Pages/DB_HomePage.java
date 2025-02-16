@@ -41,20 +41,6 @@ public class DB_HomePage {
 	
 	public void verifyElementAddToCart() {
 		
-		/*
-		Alert alert =driver.switchTo().alert();
-		String actual=alert.getText();
-		System.out.println("Cart alert :" + actual);
-		String expected="Product added.";
-		
-		alert.accept();
-		
-		Assert.assertEquals(actual,expected ,"Fail to Add :  No Item added");
-		*/
-	
-	
-	
-	
 	try {
 	    Alert alert = driver.switchTo().alert();
 	    String actual = alert.getText();

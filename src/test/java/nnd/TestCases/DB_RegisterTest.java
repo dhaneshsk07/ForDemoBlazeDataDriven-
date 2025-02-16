@@ -50,7 +50,7 @@ public class DB_RegisterTest extends DB_ConnectionSetup{
 		
 		DB_RegisterPage reg=new DB_RegisterPage(driver);
 		reg.registerlblClick();
-		reg.enterUsername(username);
+		reg.enterUsername(username); 
 		reg.enterPassword(password);
 		reg.clickSignUp();   
 		
