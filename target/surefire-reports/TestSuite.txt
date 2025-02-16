@@ -1,28 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 38.985 s <<< FAILURE! - in TestSuite
-validUserLogin(nnd.TestCases.DB_LoginTest)  Time elapsed: 6.193 s  <<< FAILURE!
-org.openqa.selenium.NoAlertPresentException: 
-no such alert
-  (Session info: chrome=133.0.6943.99)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7b6140af82ef4ca129d37af1d2f017f2, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\dhane\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62194}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62194/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7b6140af82ef4ca129d37af1d2f017f2
-	at nnd.TestCases.DB_LoginTest.validUserLogin(DB_LoginTest.java:49)
+Tests run: 7, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 81.566 s <<< FAILURE! - in TestSuite
+inValidUserLogin(nnd.TestCases.DB_LoginTest)  Time elapsed: 8.496 s  <<< FAILURE!
+java.lang.AssertionError: Log in failed expected [Log in successful.] but found [User does not exist.]
+	at nnd.TestCases.DB_LoginTest.inValidUserLogin(DB_LoginTest.java:83)
 
-validUserLogin(nnd.TestCases.DB_LoginTest)  Time elapsed: 5.458 s  <<< FAILURE!
-org.openqa.selenium.NoAlertPresentException: 
-no such alert
-  (Session info: chrome=133.0.6943.99)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [664db65d8572ab427d470a73c449094f, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\dhane\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62220}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62220/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 664db65d8572ab427d470a73c449094f
-	at nnd.TestCases.DB_LoginTest.validUserLogin(DB_LoginTest.java:49)
+inValidUserLogin(nnd.TestCases.DB_LoginTest)  Time elapsed: 8.437 s  <<< FAILURE!
+java.lang.AssertionError: Log in failed expected [Log in successful.] but found [User does not exist.]
+	at nnd.TestCases.DB_LoginTest.inValidUserLogin(DB_LoginTest.java:83)
+
+validUserSignUp(nnd.TestCases.DB_RegisterTest)  Time elapsed: 10.439 s  <<< FAILURE!
+java.lang.AssertionError: Signup failed expected [Sign up successful.] but found [This user already exist.]
+	at nnd.TestCases.DB_RegisterTest.validUserSignUp(DB_RegisterTest.java:55)
+
+validUserSignUp(nnd.TestCases.DB_RegisterTest)  Time elapsed: 10.472 s  <<< FAILURE!
+java.lang.AssertionError: Signup failed expected [Sign up successful.] but found [This user already exist.]
+	at nnd.TestCases.DB_RegisterTest.validUserSignUp(DB_RegisterTest.java:55)
 

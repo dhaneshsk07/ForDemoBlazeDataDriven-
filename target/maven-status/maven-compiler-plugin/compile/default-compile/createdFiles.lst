@@ -1,2 +1,9 @@
+nnd\Utilities\DB_ScreenshotExtent.class
 nnd\Utilities\Screenshot.class
+nnd\Utilities\DB_ConfigReader.class
+nnd\Utilities\DB_ExcelUtil.class
 nnd\Utilities\ExcelReader.class
+base\DB_ConnectionSetup.class
+nnd\Pages\DB_LoginPage.class
+nnd\Pages\DB_HomePage.class
+nnd\Pages\DB_RegisterPage.class

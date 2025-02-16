@@ -3,11 +3,18 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
+      <class name="nnd.TestCases.DB_RegisterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validUserSignUp" invocation-numbers="0 1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nnd.TestCases.DB_RegisterTest -->
       <class name="nnd.TestCases.DB_LoginTest">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="validUserLogin" invocation-numbers="0 1"/>
+          <include name="inValidUserLogin" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- nnd.TestCases.DB_LoginTest -->
     </classes>

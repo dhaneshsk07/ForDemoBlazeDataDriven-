@@ -51,6 +51,8 @@ public class DB_MyTestListener implements ITestListener {
 		System.out.println("Test Started : " + result.getName());
 		System.out.println("Test Description : " + description);
 		System.out.println("Test NAME WITH INVOCATION COUNT : " + fullTestName);
+		
+		
 	}
 
 	@Override
@@ -66,7 +68,8 @@ public class DB_MyTestListener implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-
+		String screenshotPath=null;
+		
 		// Extent report
 		test.fail("Test failed : " + result.getName());
 
@@ -85,7 +88,7 @@ public class DB_MyTestListener implements ITestListener {
 
 				// EXPERIEMENTAL 17022025
 				// Capture screenshot and return path
-				String screenshotPath = sc.takeScreenshot(result);
+				screenshotPath = sc.takeScreenshot(result);
 
 				// Attach Screenshot to Extent Report
 				test.fail("Screenshot on Failure",
@@ -103,9 +106,9 @@ public class DB_MyTestListener implements ITestListener {
 			System.out.println("Driver is not available for taking the screenshot.");
 		}
 
-		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()); // Generates current timestamp
-		String screenshotPath = "C:/Users/dhane/eclipse-workspace/OpenCart26012025/Failed Screenshots/Screenshot_test1_"
-				+ timeStamp + ".png";
+		//String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()); // Generates current timestamp
+		//String screenshotPath = "C:/Users/dhane/eclipse-workspace/OpenCart26012025/Failed Screenshots/Screenshot_test1_"
+				//+ timeStamp + ".png";
 
 // Ensure the screenshot is actually saved before attaching
 		// CODE TO SHOW SCREENSHOT IN EXTENT REPORT
@@ -154,7 +157,9 @@ public class DB_MyTestListener implements ITestListener {
 			System.out.println("the build number is : " + buildNumber);
 			// String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_"
 			// + buildNumber + ".html";
-			String reportPath = System.getProperty("user.dir") + "\\" + "reports" + "\\" + "ExtentReport_" + buildNumber
+			
+			//demo blaze 
+			String reportPath = System.getProperty("user.dir") + "\\" + "test-output" + "\\" + "extent-Reports" + buildNumber
 					+ ".html";
 
 			ExtentSparkReporter sparkReporterGenkins = new ExtentSparkReporter(reportPath);
@@ -164,9 +169,12 @@ public class DB_MyTestListener implements ITestListener {
 		} else {
 
 			System.out.println("the build number is : " + buildNumber);
-			// String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_"
-			// + buildNumber + ".html";
+			/*
 			String reportPath = System.getProperty("user.dir") + "\\" + "reports" + "\\" + "ExtentReport_"
+					+ "localBuild" + ".html";
+			*/
+			
+			String reportPath = System.getProperty("user.dir") + "\\" + "test-output" + "\\" + "extent-Reports"
 					+ "localBuild" + ".html";
 
 			ExtentSparkReporter sparkReporterGenkins = new ExtentSparkReporter(reportPath);

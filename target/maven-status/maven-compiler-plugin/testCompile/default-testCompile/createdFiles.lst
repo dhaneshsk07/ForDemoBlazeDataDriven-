@@ -1,4 +1,8 @@
 Experimental\DropdownAmazon.class
 Experimental\WindowHandlesBookMyWindow.class
 Experimental\DragAndDropExample.class
+nnd\TestCases\DB_HomeTest.class
+nnd\TestCases\DB_RegisterTest.class
 Experimental\GoogleSearchAElement.class
+nnd\Listners\DB_MyTestListener.class
+nnd\TestCases\DB_LoginTest.class
