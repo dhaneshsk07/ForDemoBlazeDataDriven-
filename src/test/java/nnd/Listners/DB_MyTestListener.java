@@ -106,9 +106,7 @@ public class DB_MyTestListener implements ITestListener {
 			System.out.println("Driver is not available for taking the screenshot.");
 		}
 
-		//String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date()); // Generates current timestamp
-		//String screenshotPath = "C:/Users/dhane/eclipse-workspace/OpenCart26012025/Failed Screenshots/Screenshot_test1_"
-				//+ timeStamp + ".png";
+		
 
 // Ensure the screenshot is actually saved before attaching
 		// CODE TO SHOW SCREENSHOT IN EXTENT REPORT

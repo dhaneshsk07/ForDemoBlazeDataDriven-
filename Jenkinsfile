@@ -16,37 +16,38 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh "mvn -f ${POM_PATH} clean compile"
+                bat "mvn -f ${POM_PATH} clean compile"
             }
         }
 
         stage('Test') {
             steps {
-                sh "mvn -f ${POM_PATH} test"
+                bat "mvn -f ${POM_PATH} test"
             }
         }
 
         stage('Package') {
             steps {
-                sh "mvn -f ${POM_PATH} package"
+                bat "mvn -f ${POM_PATH} package"
             }
         }
 
         stage('Post-Build Report') {
             steps {
-                //junit '**/target/surefire-reports/*.xml'
                 archiveArtifacts artifacts: '**/test-output/extent-Reports/*.html', allowEmptyArchive: true
             }
         }
-        
+
         stage('Publish Report') {
             steps {
-                publishHTML(target: [
-                    reportDir: 'test-output/extent-Reports',
-                    reportFiles: 'extent-report.html',
-                    reportName: 'Extent Report',
+                publishHTML([
+                    allowMissing: true,
                     alwaysLinkToLastBuild: true,
-                    keepAll: true
+                    keepAll: true,
+                    reportDir: 'test-output/extent-Reports',
+                    reportFiles: '*.html',
+                    reportName: 'Extent Test Report',
+                    reportTitles: 'Test Results'
                 ])
             }
         }
@@ -55,8 +56,18 @@ pipeline {
     post {
         always {
             echo 'Job completed!'
-            //archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
             archiveArtifacts artifacts: '**/test-output/extent-Reports/*.html', allowEmptyArchive: true
+
+            // Publish Extent Report
+            publishHTML([
+                allowMissing: true,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'test-output/extent-Reports',
+                reportFiles: '*.html',
+                reportName: 'Extent Test Report',
+                reportTitles: 'Test Results'
+            ])
         }
         success {
             echo 'Build completed successfully!'
