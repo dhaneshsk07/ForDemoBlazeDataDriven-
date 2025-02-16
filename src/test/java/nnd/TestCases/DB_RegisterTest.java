@@ -71,8 +71,8 @@ public class DB_RegisterTest extends DB_ConnectionSetup{
 		DB_RegisterPage reg=new DB_RegisterPage(driver);
 		reg.registerlblClick();
 		
-		String username="Dhan Spec 011";
-		String password="dhan#03011";
+		String username="Dhan Spec 0111";
+		String password="dhan#030111";
 		
 		reg.enterUsername(username); 
 		reg.enterPassword(password);
