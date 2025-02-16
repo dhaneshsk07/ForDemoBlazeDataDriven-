@@ -31,7 +31,7 @@ public class DB_LoginTest extends DB_ConnectionSetup {
 			data[i - 1][0] = DB_ExcelUtil.getData(i, 0); // Username
 			data[i - 1][1] = DB_ExcelUtil.getData(i, 1); // Password
 
-		} 
+		}  
 		return data;
 	}
 

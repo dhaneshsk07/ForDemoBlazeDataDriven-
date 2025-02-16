@@ -35,7 +35,7 @@ public class DB_RegisterPage {
 	 registerlbl =driver.findElement(By.xpath("//a[text()='Sign up']"));
 	 registerlbl.click();
 	}
-	
+	 
 	//signup username
 	public void enterUsername(String username){
 		
@@ -62,7 +62,7 @@ public class DB_RegisterPage {
 		String actual=alert.getText();
 		alert.accept();
 		
-		String expected ="Sign up successful." ;
+		String expected ="Sign up successful." ; 
 		
 		Assert.assertEquals(actual,expected ,"Signup failed");
 		
@@ -71,6 +71,30 @@ public class DB_RegisterPage {
 		
 		//signupClosebtn.click();
 	}
+	
+	
+public void verifyInvalidSignUp() throws InterruptedException{
+		
+		signupBtn =driver.findElement(By.xpath("//button[text()='Sign up']"));
+		
+		signupBtn.click();
+		Thread.sleep(10000);
+		
+		Alert alert = driver.switchTo().alert();
+		System.out.println("Alert Text: " + alert.getText());
+		String actual=alert.getText();
+		alert.accept();
+		
+		String expected ="This user already exist." ; 
+		
+		Assert.assertEquals(actual,expected ,"Signup failed");
+		
+		//CLOSE BTN---------------------
+		//signupClosebtn =driver.findElement(By.xpath("(//button[text()='Close'])[2]"));
+		
+		//signupClosebtn.click();
+	}
+	
 	
 	
 	

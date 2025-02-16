@@ -9,17 +9,10 @@
       <class name="nnd.TestCases.DB_RegisterTest">
         <methods>
           <include name="tearDown"/>
-          <include name="validUserSignUp" invocation-numbers="0 1"/>
+          <include name="invalidUserSignUp" invocation-numbers="0 1"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- nnd.TestCases.DB_RegisterTest -->
-      <class name="nnd.TestCases.DB_LoginTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="inValidUserLogin" invocation-numbers="0 1"/>
-        </methods>
-      </class> <!-- nnd.TestCases.DB_LoginTest -->
     </classes>
   </test> <!-- Demo Blaze Functional Tests(failed) -->
 </suite> <!-- Failed suite [Demo Blaze Suite] -->

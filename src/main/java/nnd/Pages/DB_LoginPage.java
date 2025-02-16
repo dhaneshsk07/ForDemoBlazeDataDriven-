@@ -111,7 +111,7 @@ public class DB_LoginPage {
 		    alert.accept();
 		    
 		    // Assert the alert message
-		    String expected = "Log in successful.";
+		    String expected = "User does not exist.";
 		    Assert.assertEquals(actual, expected, "Log in failed");
 		    
 		} catch (NoAlertPresentException e) {

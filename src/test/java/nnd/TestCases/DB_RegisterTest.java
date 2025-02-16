@@ -2,6 +2,8 @@ package nnd.TestCases;
 
 import nnd.Pages.DB_RegisterPage;
 import nnd.Utilities.DB_ConfigReader;
+import nnd.Utilities.DB_ExcelUtil;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import org.testng.annotations.DataProvider;
@@ -44,16 +46,51 @@ public class DB_RegisterTest extends DB_ConnectionSetup{
         fs.close();
         return data;
     }
+	
+	//invalid data
+	@DataProvider(name = "invalidUserData")
+	public Object[][] getinvalidData() throws IOException {
+		DB_ExcelUtil.loadExcel(
+				"C:\\Users\\dhane\\eclipse-workspace\\DemoBlazeDataDriven14022025\\src\\test\\java\\nnd\\TestData\\TestData.xlsx",
+				"Sheet1");
+		int rowCount = DB_ExcelUtil.getRowCount() - 1; // adding -1 to skip header
 
-	@Test(description="valid user sign Up ",dataProvider="testData",enabled=true)
-	public void validUserSignUp(String username,String password) throws InterruptedException {
+		Object[][] data = new Object[rowCount][2]; // Assuming username & password columns
+		for (int i = 1; i <= rowCount; i++) { // staring form i=1 skipping header
+			data[i - 1][0] = DB_ExcelUtil.getData(i, 0); // Username
+			data[i - 1][1] = DB_ExcelUtil.getData(i, 1); // Password
+
+		} 
+		return data;
+	}
+
+	//hard coded here 
+	@Test(description="valid user sign Up ",enabled=true)
+	public void validUserSignUp() throws InterruptedException {
+		
+		DB_RegisterPage reg=new DB_RegisterPage(driver);
+		reg.registerlblClick();
+		
+		String username="Dhan Spec 011";
+		String password="dhan#03011";
+		
+		reg.enterUsername(username); 
+		reg.enterPassword(password);
+		
+		reg.clickSignUp();   
+		
+		
+	}
+	
+	
+	@Test(description="invalid user sign Up ",dataProvider="invalidUserData",enabled=true)
+	public void invalidUserSignUp(String username,String password) throws InterruptedException {
 		
 		DB_RegisterPage reg=new DB_RegisterPage(driver);
 		reg.registerlblClick();
 		reg.enterUsername(username); 
 		reg.enterPassword(password);
-		reg.clickSignUp();   
-		
+		reg.verifyInvalidSignUp();
 		
 	}
 }
