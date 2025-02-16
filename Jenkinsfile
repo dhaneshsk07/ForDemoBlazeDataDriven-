@@ -1,26 +1,56 @@
 pipeline {
     agent any
+
+    environment {
+        REPO_URL = 'https://github.com/dhaneshsk07/ForDemoBlazeDataDriven-.git'
+        PROJECT_DIR = 'DemoBlazeDataDriven14022025'
+        POM_PATH = "C:/Users/dhane/eclipse-workspace/DemoBlazeDataDriven14022025/pom.xml"
+    }
+
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/dhaneshsk07/ForDemoBlazeDataDriven-.git'
+                git branch: 'main', url: "${REPO_URL}"
             }
         }
-        stage('Build and Test') {
+
+        stage('Build') {
             steps {
-                dir("${WORKSPACE}") { 
-                    bat 'mvn clean install test'
-                }
+                sh "mvn -f ${POM_PATH} clean compile"
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh "mvn -f ${POM_PATH} test"
+            }
+        }
+
+        stage('Package') {
+            steps {
+                sh "mvn -f ${POM_PATH} package"
+            }
+        }
+
+        stage('Post-Build Report') {
+            steps {
+                //junit '**/target/surefire-reports/*.xml'
+                archiveArtifacts artifacts: '**/test-output/extent-Reports/*.html', allowEmptyArchive: true
             }
         }
     }
+
     post {
         always {
-            // Archive TestNG reports
-            //junit '**/test-output/testng-*.xml'
-            
-            // Archive Extent Reports
+            echo 'Job completed!'
+            //archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
             archiveArtifacts artifacts: '**/test-output/extent-Reports/*.html', allowEmptyArchive: true
+        }
+        success {
+            echo 'Build completed successfully!'
+        }
+        failure {
+            echo 'Build failed!'
         }
     }
 }
