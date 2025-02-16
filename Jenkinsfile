@@ -38,6 +38,18 @@ pipeline {
                 archiveArtifacts artifacts: '**/test-output/extent-Reports/*.html', allowEmptyArchive: true
             }
         }
+        
+        stage('Publish Report') {
+            steps {
+                publishHTML(target: [
+                    reportDir: 'test-output/extent-Reports',
+                    reportFiles: 'extent-report.html',
+                    reportName: 'Extent Report',
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true
+                ])
+            }
+        }
     }
 
     post {

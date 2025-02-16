@@ -1,20 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 81.566 s <<< FAILURE! - in TestSuite
-inValidUserLogin(nnd.TestCases.DB_LoginTest)  Time elapsed: 8.496 s  <<< FAILURE!
+Tests run: 7, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 93.985 s <<< FAILURE! - in TestSuite
+inValidUserLogin(nnd.TestCases.DB_LoginTest)  Time elapsed: 9.007 s  <<< FAILURE!
 java.lang.AssertionError: Log in failed expected [Log in successful.] but found [User does not exist.]
 	at nnd.TestCases.DB_LoginTest.inValidUserLogin(DB_LoginTest.java:83)
 
-inValidUserLogin(nnd.TestCases.DB_LoginTest)  Time elapsed: 8.437 s  <<< FAILURE!
+inValidUserLogin(nnd.TestCases.DB_LoginTest)  Time elapsed: 8.379 s  <<< FAILURE!
 java.lang.AssertionError: Log in failed expected [Log in successful.] but found [User does not exist.]
 	at nnd.TestCases.DB_LoginTest.inValidUserLogin(DB_LoginTest.java:83)
 
-validUserSignUp(nnd.TestCases.DB_RegisterTest)  Time elapsed: 10.439 s  <<< FAILURE!
+validUserSignUp(nnd.TestCases.DB_RegisterTest)  Time elapsed: 10.397 s  <<< FAILURE!
 java.lang.AssertionError: Signup failed expected [Sign up successful.] but found [This user already exist.]
 	at nnd.TestCases.DB_RegisterTest.validUserSignUp(DB_RegisterTest.java:55)
 
-validUserSignUp(nnd.TestCases.DB_RegisterTest)  Time elapsed: 10.472 s  <<< FAILURE!
+validUserSignUp(nnd.TestCases.DB_RegisterTest)  Time elapsed: 10.379 s  <<< FAILURE!
 java.lang.AssertionError: Signup failed expected [Sign up successful.] but found [This user already exist.]
 	at nnd.TestCases.DB_RegisterTest.validUserSignUp(DB_RegisterTest.java:55)
 
