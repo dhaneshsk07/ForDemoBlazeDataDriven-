@@ -9,18 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">18,630</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">42,093</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">nnd.TestCases.RegisterTest</td><td><a href="#m0">validUserSignUp</a></td><td rowspan="2">1739563900101</td><td rowspan="2">5491</td></tr><tr class="failedeven"><td><a href="#m1">validUserSignUp</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">nnd.TestCases.DB_LoginTest</td><td><a href="#m0">inValidUserLogin</a></td><td rowspan="2">1739736695112</td><td rowspan="2">8458</td></tr><tr class="failedeven"><td><a href="#m1">inValidUserLogin</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">nnd.TestCases.RegisterTest#validUserSignUp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>dhan01</td><td>dhan@01</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Signup failed expected [Sign up successful.] but found [This user already exist.]
+<h2>Default test</h2><h3 id="m0">nnd.TestCases.DB_LoginTest#inValidUserLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>dhanINV01</td><td>dhanINV#01</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Log in failed expected [Log in successful.] but found [User does not exist.]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
-	at nnd.Pages.RegisterPage.clickSignUp(RegisterPage.java:70)
-	at nnd.TestCases.RegisterTest.validUserSignUp(RegisterTest.java:57)
+	at nnd.Pages.DB_LoginPage.loginAlertHandle(DB_LoginPage.java:126)
+	at nnd.TestCases.DB_LoginTest.inValidUserLogin(DB_LoginTest.java:87)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -48,14 +48,14 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">nnd.TestCases.RegisterTest#validUserSignUp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>dhan6000</td><td>dhan@6000</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Signup failed expected [Sign up successful.] but found [This user already exist.]
+<h3 id="m1">nnd.TestCases.DB_LoginTest#inValidUserLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>dhanINV02</td><td>dhanINV#02</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Log in failed expected [Log in successful.] but found [User does not exist.]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 	at org.testng.Assert.assertEquals(Assert.java:122)
 	at org.testng.Assert.assertEquals(Assert.java:629)
-	at nnd.Pages.RegisterPage.clickSignUp(RegisterPage.java:70)
-	at nnd.TestCases.RegisterTest.validUserSignUp(RegisterTest.java:57)
+	at nnd.Pages.DB_LoginPage.loginAlertHandle(DB_LoginPage.java:126)
+	at nnd.TestCases.DB_LoginTest.inValidUserLogin(DB_LoginTest.java:87)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)

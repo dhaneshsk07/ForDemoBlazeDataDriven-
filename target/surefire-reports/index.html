@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,12 +103,12 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.LoginTest" class="method navigator-link" hash-for-method="desktopItemccHECK">desktopItemccHECK</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_LoginTest" class="method navigator-link" hash-for-method="validUserLogin(dhan01, dhan@01)">validUserLogin(dhan01, dhan@01)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.RegisterTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_LoginTest" class="method navigator-link" hash-for-method="validUserLogin(dhan6000, dhan@6000)">validUserLogin(dhan6000, dhan@6000)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -122,7 +122,12 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.LoginTest" class="method navigator-link" hash-for-method="ValidUserLogin">ValidUserLogin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_LoginTest" class="method navigator-link" hash-for-method="inValidUserLogin(dhanINV02, dhanINV#02)">inValidUserLogin(dhanINV02, dhanINV#02)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_LoginTest" class="method navigator-link" hash-for-method="inValidUserLogin(dhanINV01, dhanINV#01)">inValidUserLogin(dhanINV01, dhanINV#01)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -140,50 +145,23 @@
           <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">nnd.TestCases.LoginTest</span>
+              <span class="class-name">nnd.TestCases.DB_LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="desktopItemccHECK">
-                  </a> <!-- desktopItemccHECK -->
-                  <span class="method-name">desktopItemccHECK</span>
-                  <div class="stack-trace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;a&quot;
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:44)
-	at nnd.Pages.LoginPage.desktopItemCheck(LoginPage.java:66)
-	at nnd.TestCases.LoginTest.desktopItemccHECK(LoginTest.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(LoginTest_TC02 DeskTopItem Check)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">nnd.TestCases.RegisterTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;My Account&apos;]&quot;}
-  (Session info: chrome=132.0.6834.160)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+                  <a name="validUserLogin(dhan01, dhan@01)">
+                  </a> <!-- validUserLogin(dhan01, dhan@01) -->
+                  <span class="method-name">validUserLogin</span>
+                  <span class="parameters">(dhan01,dhan@01)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=133.0.6943.99)
 Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ae67a0c8c930f3231259f48d1a8bde14, findElement {value=//span[text()=&apos;My Account&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\dhane\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56523}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56523/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ae67a0c8c930f3231259f48d1a8bde14
+Command: [7b6140af82ef4ca129d37af1d2f017f2, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\dhane\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62194}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62194/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b6140af82ef4ca129d37af1d2f017f2
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -191,17 +169,49 @@ Session ID: ae67a0c8c930f3231259f48d1a8bde14
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at nnd.Pages.RegisterPage.RegisterNewUser(RegisterPage.java:30)
-	at nnd.TestCases.RegisterTest.test1(RegisterTest.java:16)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1194)
+	at nnd.Pages.DB_LoginPage.clickLogin(DB_LoginPage.java:76)
+	at nnd.TestCases.DB_LoginTest.validUserLogin(DB_LoginTest.java:49)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(RegisterTest_TC01_Valid User Registration )                  </em>
+(LoginTest_TC01 Valid User Login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validUserLogin(dhan6000, dhan@6000)">
+                  </a> <!-- validUserLogin(dhan6000, dhan@6000) -->
+                  <span class="method-name">validUserLogin</span>
+                  <span class="parameters">(dhan6000,dhan@6000)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=133.0.6943.99)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [664db65d8572ab427d470a73c449094f, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.99, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\dhane\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62220}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62220/devtoo..., se:cdpVersion: 133.0.6943.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 664db65d8572ab427d470a73c449094f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1194)
+	at nnd.Pages.DB_LoginPage.clickLogin(DB_LoginPage.java:76)
+	at nnd.TestCases.DB_LoginTest.validUserLogin(DB_LoginTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(LoginTest_TC01 Valid User Login)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -209,16 +219,27 @@ Session ID: ae67a0c8c930f3231259f48d1a8bde14
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">nnd.TestCases.LoginTest</span>
+              <span class="class-name">nnd.TestCases.DB_LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ValidUserLogin">
-                  </a> <!-- ValidUserLogin -->
-                  <span class="method-name">ValidUserLogin</span>
+                  <a name="inValidUserLogin(dhanINV02, dhanINV#02)">
+                  </a> <!-- inValidUserLogin(dhanINV02, dhanINV#02) -->
+                  <span class="method-name">inValidUserLogin</span>
+                  <span class="parameters">(dhanINV02,dhanINV#02)</span>
                   <em>
-(LoginTest_TC01 Valid User Login)                  </em>
+(LoginTest_TC01 inValid User Login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="inValidUserLogin(dhanINV01, dhanINV#01)">
+                  </a> <!-- inValidUserLogin(dhanINV01, dhanINV#01) -->
+                  <span class="method-name">inValidUserLogin</span>
+                  <span class="parameters">(dhanINV01,dhanINV#01)</span>
+                  <em>
+(LoginTest_TC01 inValid User Login)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -234,8 +255,8 @@ Session ID: ae67a0c8c930f3231259f48d1a8bde14
 &lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;nnd.TestCases.LoginTest&quot;/&gt;
-      &lt;class name=&quot;nnd.TestCases.RegisterTest&quot;/&gt;
+      &lt;class name=&quot;nnd.TestCases.DB_LoginTest&quot;/&gt;
+      &lt;class name=&quot;nnd.TestCases.DB_RegisterTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -259,6 +280,22 @@ Session ID: ae67a0c8c930f3231259f48d1a8bde14
             <span class="header-content">Groups for Surefire suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Negative TestCases</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">inValidUserLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Positive TestCases</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">validUserLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Surefire_suite" class="panel">
@@ -275,24 +312,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ValidUserLogin')
-data.setCell(0, 2, 'nnd.TestCases.LoginTest')
-data.setCell(0, 3, 16344);
+data.setCell(0, 1, 'validUserLogin')
+data.setCell(0, 2, 'nnd.TestCases.DB_LoginTest')
+data.setCell(0, 3, 6176);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test1')
-data.setCell(1, 2, 'nnd.TestCases.RegisterTest')
-data.setCell(1, 3, 15100);
+data.setCell(1, 1, 'inValidUserLogin')
+data.setCell(1, 2, 'nnd.TestCases.DB_LoginTest')
+data.setCell(1, 3, 5551);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'desktopItemccHECK')
-data.setCell(2, 2, 'nnd.TestCases.LoginTest')
-data.setCell(2, 3, 29);
+data.setCell(2, 1, 'validUserLogin')
+data.setCell(2, 2, 'nnd.TestCases.DB_LoginTest')
+data.setCell(2, 3, 5448);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'inValidUserLogin')
+data.setCell(3, 2, 'nnd.TestCases.DB_LoginTest')
+data.setCell(3, 3, 5418);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -307,9 +348,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">nnd.TestCases.DB_RegisterTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validUserSignUp</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Surefire_suite" class="panel">
@@ -318,49 +366,58 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">nnd.TestCases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">nnd.TestCases.DB_LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void nnd.TestCases.LoginTest.ValidUserLogin() throws org.apache.poi.openxml4j.exceptions.Inva...)</span>
+                <span class="method-name">setUp(public void nnd.TestCases.DB_LoginTest.inValidUserLogin(java.lang.String,java.lang.String) throws or...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">ValidUserLogin</span>
-                <span class="method-start">2171 ms</span>
+                <span class="method-name">inValidUserLogin(dhanINV01, dhanINV#01)</span>
+                <span class="method-start">4048 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18517 ms</span>
+                <span class="method-start">9470 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void nnd.TestCases.LoginTest.desktopItemccHECK() throws org.apache.poi.openxml4j.exceptions.I...)</span>
-                <span class="method-start">18660 ms</span>
+                <span class="method-name">setUp(public void nnd.TestCases.DB_LoginTest.inValidUserLogin(java.lang.String,java.lang.String) throws or...)</span>
+                <span class="method-start">9652 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">inValidUserLogin(dhanINV02, dhanINV#02)</span>
+                <span class="method-start">12302 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">17853 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void nnd.TestCases.DB_LoginTest.validUserLogin(java.lang.String,java.lang.String) throws org....)</span>
+                <span class="method-start">18159 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">desktopItemccHECK</span>
-                <span class="method-start">20405 ms</span>
+                <span class="method-name">validUserLogin(dhan01, dhan@01)</span>
+                <span class="method-start">20952 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20611 ms</span>
+                <span class="method-start">27457 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">nnd.TestCases.RegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void nnd.TestCases.RegisterTest.test1() throws java.lang.InterruptedException, org.testng.Tes...)</span>
-                <span class="method-start">20762 ms</span>
+                <span class="method-name">setUp(public void nnd.TestCases.DB_LoginTest.validUserLogin(java.lang.String,java.lang.String) throws org....)</span>
+                <span class="method-start">27626 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test1</span>
-                <span class="method-start">21819 ms</span>
+                <span class="method-name">validUserLogin(dhan6000, dhan@6000)</span>
+                <span class="method-start">30773 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">37071 ms</span>
+                <span class="method-start">36471 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

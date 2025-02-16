@@ -3,20 +3,13 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="nnd.TestCases.LoginTest">
+      <class name="nnd.TestCases.DB_LoginTest">
         <methods>
-          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="desktopItemccHECK"/>
-        </methods>
-      </class> <!-- nnd.TestCases.LoginTest -->
-      <class name="nnd.TestCases.RegisterTest">
-        <methods>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="test1"/>
+          <include name="validUserLogin" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- nnd.TestCases.RegisterTest -->
+      </class> <!-- nnd.TestCases.DB_LoginTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

@@ -1,6 +1,2 @@
-nnd\Pages\RegisterPage.class
-nnd\Utilities\ExcelReader.class
 nnd\Utilities\Screenshot.class
-base\ConnectionSetup.class
-nnd\Pages\LoginPage.class
-nnd\Utilities\ConfigReader.class
+nnd\Utilities\ExcelReader.class

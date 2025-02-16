@@ -27,7 +27,9 @@ public class Screenshot  {
     // Set screenshot name with timestamp
     String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
     String screenshotName = "Screenshot_" + result.getName() + "_" + timestamp + ".png";
-    File destination = new File("C:\\Users\\dhane\\eclipse-workspace\\OpenCart26012025\\Failed Screenshots\\" + screenshotName);
+    File destination = new File("C:\\Users\\dhane\\eclipse-workspace\\DemoBlazeDataDriven14022025\\Failed Screenshots\\" + screenshotName);
+    
+    
     
     // Save the screenshot
     FileHandler.copy(source, destination); 
