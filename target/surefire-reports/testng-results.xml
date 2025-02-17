@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="4" failed="0" skipped="4">
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-18T01:09:37 IST" name="Surefire suite" finished-at="2025-02-18T01:10:45 IST" duration-ms="67327">
+  <suite started-at="2025-02-18T01:22:50 IST" name="Surefire suite" finished-at="2025-02-18T01:24:40 IST" duration-ms="109319">
     <groups>
       <group name="Positive TestCases">
         <method signature="DB_LoginTest.validUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" name="validUserLogin" class="nnd.TestCases.DB_LoginTest"/>
@@ -11,9 +11,9 @@
         <method signature="DB_LoginTest.inValidUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" name="inValidUserLogin" class="nnd.TestCases.DB_LoginTest"/>
       </group> <!-- Negative TestCases -->
     </groups>
-    <test started-at="2025-02-18T01:09:37 IST" name="Surefire test" finished-at="2025-02-18T01:10:45 IST" duration-ms="67327">
+    <test started-at="2025-02-18T01:22:50 IST" name="Surefire test" finished-at="2025-02-18T01:24:40 IST" duration-ms="109319">
       <class name="nnd.TestCases.DB_HomeTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_HomeTest@2a65fe7c]" started-at="2025-02-18T01:09:46 IST" name="setUp" finished-at="2025-02-18T01:09:49 IST" duration-ms="3513" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_HomeTest@2a65fe7c]" started-at="2025-02-18T01:23:43 IST" name="setUp" finished-at="2025-02-18T01:23:46 IST" duration-ms="3921" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,24 +22,24 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@fe87ddd]]>
+                <![CDATA[org.testng.TestRunner@5d37aa0f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyPurchaseItem()[pri:0, instance:nnd.TestCases.DB_HomeTest@2a65fe7c]" started-at="2025-02-18T01:09:49 IST" name="verifyPurchaseItem" description="HomeTest_TC01" finished-at="2025-02-18T01:09:57 IST" depends-on-methods="nnd.TestCases.DB_LoginTest.validUserLogin" duration-ms="7548" status="PASS">
+        <test-method signature="verifyPurchaseItem()[pri:0, instance:nnd.TestCases.DB_HomeTest@2a65fe7c]" started-at="2025-02-18T01:23:46 IST" name="verifyPurchaseItem" description="HomeTest_TC01" finished-at="2025-02-18T01:23:54 IST" depends-on-methods="nnd.TestCases.DB_LoginTest.validUserLogin" duration-ms="7875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPurchaseItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_HomeTest@2a65fe7c]" started-at="2025-02-18T01:09:57 IST" name="tearDown" finished-at="2025-02-18T01:09:57 IST" duration-ms="154" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_HomeTest@2a65fe7c]" started-at="2025-02-18T01:23:54 IST" name="tearDown" finished-at="2025-02-18T01:23:55 IST" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- nnd.TestCases.DB_HomeTest -->
       <class name="nnd.TestCases.DB_LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:09:38 IST" name="setUp" finished-at="2025-02-18T01:09:45 IST" duration-ms="7317" status="FAIL">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:22:51 IST" name="setUp" finished-at="2025-02-18T01:23:01 IST" duration-ms="9647" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,60 +48,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@fe87ddd]]>
+                <![CDATA[org.testng.TestRunner@5d37aa0f]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Website is down or error page displayed.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Website is down or error page displayed.
-at org.testng.Assert.fail(Assert.java:111)
-at base.DB_ConnectionSetup.setUp(DB_ConnectionSetup.java:120)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="inValidUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:09:45 IST" name="inValidUserLogin" description="LoginTest_TC01 inValid User Login" data-provider="invalidloginData" finished-at="2025-02-18T01:09:45 IST" duration-ms="0" status="SKIP">
+        <test-method signature="inValidUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:23:01 IST" name="inValidUserLogin" description="LoginTest_TC01 inValid User Login" data-provider="invalidloginData" finished-at="2025-02-18T01:23:10 IST" duration-ms="8662" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,60 +68,30 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Website is down or error page displayed.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Website is down or error page displayed.
-at org.testng.Assert.fail(Assert.java:111)
-at base.DB_ConnectionSetup.setUp(DB_ConnectionSetup.java:120)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inValidUserLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:09:45 IST" name="tearDown" finished-at="2025-02-18T01:09:45 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:23:10 IST" name="tearDown" finished-at="2025-02-18T01:23:10 IST" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="inValidUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:09:45 IST" name="inValidUserLogin" description="LoginTest_TC01 inValid User Login" data-provider="invalidloginData" finished-at="2025-02-18T01:09:45 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:23:10 IST" name="setUp" finished-at="2025-02-18T01:23:13 IST" duration-ms="3509" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void nnd.TestCases.DB_LoginTest.inValidUserLogin(java.lang.String,java.lang.String) throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5d37aa0f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="inValidUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:23:13 IST" name="inValidUserLogin" description="LoginTest_TC01 inValid User Login" data-provider="invalidloginData" finished-at="2025-02-18T01:23:22 IST" duration-ms="9181" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -180,64 +104,30 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Website is down or error page displayed.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Website is down or error page displayed.
-at org.testng.Assert.fail(Assert.java:111)
-at base.DB_ConnectionSetup.setUp(DB_ConnectionSetup.java:120)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inValidUserLogin -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:09:45 IST" name="setUp" finished-at="2025-02-18T01:09:45 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:09:45 IST" name="tearDown" finished-at="2025-02-18T01:09:45 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:23:22 IST" name="tearDown" finished-at="2025-02-18T01:23:23 IST" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="validUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:09:46 IST" name="validUserLogin" description="LoginTest_TC01 Valid User Login" data-provider="validloginData" finished-at="2025-02-18T01:09:46 IST" duration-ms="1" status="SKIP">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:23:23 IST" name="setUp" finished-at="2025-02-18T01:23:26 IST" duration-ms="3800" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void nnd.TestCases.DB_LoginTest.validUserLogin(java.lang.String,java.lang.String) throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5d37aa0f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:23:26 IST" name="validUserLogin" description="LoginTest_TC01 Valid User Login" data-provider="validloginData" finished-at="2025-02-18T01:23:32 IST" duration-ms="5419" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -250,64 +140,30 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Website is down or error page displayed.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Website is down or error page displayed.
-at org.testng.Assert.fail(Assert.java:111)
-at base.DB_ConnectionSetup.setUp(DB_ConnectionSetup.java:120)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUserLogin -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:09:46 IST" name="setUp" finished-at="2025-02-18T01:09:46 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:09:46 IST" name="tearDown" finished-at="2025-02-18T01:09:46 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:23:32 IST" name="tearDown" finished-at="2025-02-18T01:23:32 IST" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="validUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:09:46 IST" name="validUserLogin" description="LoginTest_TC01 Valid User Login" data-provider="validloginData" finished-at="2025-02-18T01:09:46 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:23:32 IST" name="setUp" finished-at="2025-02-18T01:23:37 IST" duration-ms="4593" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void nnd.TestCases.DB_LoginTest.validUserLogin(java.lang.String,java.lang.String) throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5d37aa0f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:23:37 IST" name="validUserLogin" description="LoginTest_TC01 Valid User Login" data-provider="validloginData" finished-at="2025-02-18T01:23:42 IST" duration-ms="5876" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -320,66 +176,16 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Website is down or error page displayed.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Website is down or error page displayed.
-at org.testng.Assert.fail(Assert.java:111)
-at base.DB_ConnectionSetup.setUp(DB_ConnectionSetup.java:120)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUserLogin -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:09:46 IST" name="setUp" finished-at="2025-02-18T01:09:46 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:09:46 IST" name="tearDown" finished-at="2025-02-18T01:09:46 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T01:23:42 IST" name="tearDown" finished-at="2025-02-18T01:23:43 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- nnd.TestCases.DB_LoginTest -->
       <class name="nnd.TestCases.DB_RegisterTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:09:57 IST" name="setUp" finished-at="2025-02-18T01:10:01 IST" duration-ms="4082" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:23:55 IST" name="setUp" finished-at="2025-02-18T01:23:58 IST" duration-ms="3664" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -388,14 +194,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@fe87ddd]]>
+                <![CDATA[org.testng.TestRunner@5d37aa0f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidUserSignUp(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:10:01 IST" name="invalidUserSignUp" description="RegisterTest_TC02 invalid user sign Up " data-provider="invalidUserData" finished-at="2025-02-18T01:10:11 IST" duration-ms="10541" status="PASS">
+        <test-method signature="invalidUserSignUp(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:23:58 IST" name="invalidUserSignUp" description="RegisterTest_TC02 invalid user sign Up " data-provider="invalidUserData" finished-at="2025-02-18T01:24:09 IST" duration-ms="11160" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -411,11 +217,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUserSignUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:10:11 IST" name="tearDown" finished-at="2025-02-18T01:10:12 IST" duration-ms="194" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:24:09 IST" name="tearDown" finished-at="2025-02-18T01:24:10 IST" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:10:12 IST" name="setUp" finished-at="2025-02-18T01:10:17 IST" duration-ms="5600" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:24:10 IST" name="setUp" finished-at="2025-02-18T01:24:13 IST" duration-ms="3680" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -424,14 +230,14 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@fe87ddd]]>
+                <![CDATA[org.testng.TestRunner@5d37aa0f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidUserSignUp(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:10:17 IST" name="invalidUserSignUp" description="RegisterTest_TC02 invalid user sign Up " data-provider="invalidUserData" finished-at="2025-02-18T01:10:29 IST" duration-ms="11343" status="PASS">
+        <test-method signature="invalidUserSignUp(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:24:13 IST" name="invalidUserSignUp" description="RegisterTest_TC02 invalid user sign Up " data-provider="invalidUserData" finished-at="2025-02-18T01:24:24 IST" duration-ms="11250" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -447,11 +253,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUserSignUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:10:29 IST" name="tearDown" finished-at="2025-02-18T01:10:29 IST" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:24:24 IST" name="tearDown" finished-at="2025-02-18T01:24:25 IST" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:10:29 IST" name="setUp" finished-at="2025-02-18T01:10:33 IST" duration-ms="4631" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:24:25 IST" name="setUp" finished-at="2025-02-18T01:24:28 IST" duration-ms="3315" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -460,18 +266,65 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@fe87ddd]]>
+                <![CDATA[org.testng.TestRunner@5d37aa0f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validUserSignUp()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:10:33 IST" name="validUserSignUp" description="RegisterTest_TC01 valid user sign Up " finished-at="2025-02-18T01:10:45 IST" duration-ms="11052" status="PASS">
+        <test-method signature="validUserSignUp()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:24:28 IST" name="validUserSignUp" description="RegisterTest_TC01 valid user sign Up " finished-at="2025-02-18T01:24:38 IST" duration-ms="10394" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Signup failed expected [Sign up successful.] but found [This user already exist.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Signup failed expected [Sign up successful.] but found [This user already exist.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at nnd.Pages.DB_RegisterPage.clickSignUp(DB_RegisterPage.java:67)
+at nnd.TestCases.DB_RegisterTest.validUserSignUp(DB_RegisterTest.java:59)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUserSignUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:10:45 IST" name="tearDown" finished-at="2025-02-18T01:10:45 IST" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T01:24:40 IST" name="tearDown" finished-at="2025-02-18T01:24:40 IST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

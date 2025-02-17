@@ -26,12 +26,13 @@ pipeline {
             }
         }
 
+/*
         stage('Package') {
             steps {
                 bat "mvn -f ${POM_PATH} package"
             }
         }
-
+*/
         stage('Post-Build Report') {
             steps {
                 archiveArtifacts artifacts: '**/test-output/extent-Reports/*.html', allowEmptyArchive: true
