@@ -45,9 +45,10 @@ pipeline {
                     allowMissing: true,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
+                    reportFiles: 'index.html',
                     reportDir: 'test-output/extent-Reports',
                     reportFiles: '*.html',
-                    reportName: 'Extent Test Report',
+                    reportName: 'Extent Test Report Jenkins',
                     reportTitles: 'Test Results'
                 ])
             }

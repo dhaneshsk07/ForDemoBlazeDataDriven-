@@ -9,7 +9,7 @@
       <class name="nnd.TestCases.DB_RegisterTest">
         <methods>
           <include name="tearDown"/>
-          <include name="invalidUserSignUp" invocation-numbers="0 1"/>
+          <include name="validUserSignUp"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- nnd.TestCases.DB_RegisterTest -->
