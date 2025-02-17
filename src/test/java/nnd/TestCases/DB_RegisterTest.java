@@ -45,8 +45,8 @@ public class DB_RegisterTest extends DB_ConnectionSetup {
 	@Test(description = "RegisterTest_TC01 valid user sign Up ", enabled = true)
 	public void validUserSignUp() throws InterruptedException {
 
-		String username = "Dhan Spec 010018022025"; // hard coded here
-		String password = "dhan#1234"; // hard coded here
+		String username = "Dhan Spec 010518022025"; // hard coded here
+		String password = "dhan#1234"; // hard coded here   
 		
 		logger.info("Started Test of valid user sign-up with username: {}", username);
 	
