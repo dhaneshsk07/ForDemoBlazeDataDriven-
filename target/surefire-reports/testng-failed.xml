@@ -6,26 +6,10 @@
       <class name="nnd.TestCases.DB_RegisterTest">
         <methods>
           <include name="tearDown"/>
-          <include name="invalidUserSignUp"/>
           <include name="validUserSignUp"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- nnd.TestCases.DB_RegisterTest -->
-      <class name="nnd.TestCases.DB_LoginTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="validUserLogin"/>
-          <include name="inValidUserLogin"/>
-        </methods>
-      </class> <!-- nnd.TestCases.DB_LoginTest -->
-      <class name="nnd.TestCases.DB_HomeTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyPurchaseItem"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- nnd.TestCases.DB_HomeTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
