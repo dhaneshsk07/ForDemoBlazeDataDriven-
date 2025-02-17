@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-skipped">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                    <span class="method-stats">8 methods,  4 skipped,  4 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
+                    <div class="method-list-content skipped suite-Surefire_suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_RegisterTest" class="method navigator-link" hash-for-method="validUserSignUp">validUserSignUp</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_LoginTest" class="method navigator-link" hash-for-method="inValidUserLogin(dhan0001, dhan#0001)">inValidUserLogin(dhan0001, dhan#0001)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_LoginTest" class="method navigator-link" hash-for-method="inValidUserLogin(dhan0002, dhan#0002)">inValidUserLogin(dhan0002, dhan#0002)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_LoginTest" class="method navigator-link" hash-for-method="validUserLogin(dhan6000, dhan@6000)">validUserLogin(dhan6000, dhan@6000)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_LoginTest" class="method navigator-link" hash-for-method="validUserLogin(dhan01, dhan@01)">validUserLogin(dhan01, dhan@01)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,16 +130,6 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_LoginTest" class="method navigator-link" hash-for-method="inValidUserLogin(dhan0002, dhan#0002)">inValidUserLogin(dhan0002, dhan#0002)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_LoginTest" class="method navigator-link" hash-for-method="inValidUserLogin(dhan0001, dhan#0001)">inValidUserLogin(dhan0001, dhan#0001)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_RegisterTest" class="method navigator-link" hash-for-method="invalidUserSignUp(dhan6000, dhan@6000)">invalidUserSignUp(dhan6000, dhan@6000)</a> <!-- method navigator-link -->
@@ -137,12 +142,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_LoginTest" class="method navigator-link" hash-for-method="validUserLogin(dhan01, dhan@01)">validUserLogin(dhan01, dhan@01)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_LoginTest" class="method navigator-link" hash-for-method="validUserLogin(dhan6000, dhan@6000)">validUserLogin(dhan6000, dhan@6000)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="nnd.TestCases.DB_RegisterTest" class="method navigator-link" hash-for-method="validUserSignUp">validUserSignUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -162,29 +162,74 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
+          <div class="suite-Surefire_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">nnd.TestCases.DB_RegisterTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">nnd.TestCases.DB_LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validUserSignUp">
-                  </a> <!-- validUserSignUp -->
-                  <span class="method-name">validUserSignUp</span>
-                  <div class="stack-trace">java.lang.AssertionError: Signup failed expected [Sign up successful.] but found [This user already exist.]
-	at nnd.Pages.DB_RegisterPage.clickSignUp(DB_RegisterPage.java:67)
-	at nnd.TestCases.DB_RegisterTest.validUserSignUp(DB_RegisterTest.java:57)
+                  <a name="inValidUserLogin(dhan0001, dhan#0001)">
+                  </a> <!-- inValidUserLogin(dhan0001, dhan#0001) -->
+                  <span class="method-name">inValidUserLogin</span>
+                  <span class="parameters">(dhan0001,dhan#0001)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Website is down or error page displayed.
+	at base.DB_ConnectionSetup.setUp(DB_ConnectionSetup.java:120)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 35 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(RegisterTest_TC01 valid user sign Up )                  </em>
+(LoginTest_TC01 inValid User Login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="inValidUserLogin(dhan0002, dhan#0002)">
+                  </a> <!-- inValidUserLogin(dhan0002, dhan#0002) -->
+                  <span class="method-name">inValidUserLogin</span>
+                  <span class="parameters">(dhan0002,dhan#0002)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Website is down or error page displayed.
+	at base.DB_ConnectionSetup.setUp(DB_ConnectionSetup.java:120)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(LoginTest_TC01 inValid User Login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validUserLogin(dhan6000, dhan@6000)">
+                  </a> <!-- validUserLogin(dhan6000, dhan@6000) -->
+                  <span class="method-name">validUserLogin</span>
+                  <span class="parameters">(dhan6000,dhan@6000)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Website is down or error page displayed.
+	at base.DB_ConnectionSetup.setUp(DB_ConnectionSetup.java:120)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(LoginTest_TC01 Valid User Login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validUserLogin(dhan01, dhan@01)">
+                  </a> <!-- validUserLogin(dhan01, dhan@01) -->
+                  <span class="method-name">validUserLogin</span>
+                  <span class="parameters">(dhan01,dhan@01)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Website is down or error page displayed.
+	at base.DB_ConnectionSetup.setUp(DB_ConnectionSetup.java:120)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(LoginTest_TC01 Valid User Login)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -211,52 +256,13 @@
 (RegisterTest_TC02 invalid user sign Up )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">nnd.TestCases.DB_LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="inValidUserLogin(dhan0002, dhan#0002)">
-                  </a> <!-- inValidUserLogin(dhan0002, dhan#0002) -->
-                  <span class="method-name">inValidUserLogin</span>
-                  <span class="parameters">(dhan0002,dhan#0002)</span>
+                  <a name="validUserSignUp">
+                  </a> <!-- validUserSignUp -->
+                  <span class="method-name">validUserSignUp</span>
                   <em>
-(LoginTest_TC01 inValid User Login)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="inValidUserLogin(dhan0001, dhan#0001)">
-                  </a> <!-- inValidUserLogin(dhan0001, dhan#0001) -->
-                  <span class="method-name">inValidUserLogin</span>
-                  <span class="parameters">(dhan0001,dhan#0001)</span>
-                  <em>
-(LoginTest_TC01 inValid User Login)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validUserLogin(dhan01, dhan@01)">
-                  </a> <!-- validUserLogin(dhan01, dhan@01) -->
-                  <span class="method-name">validUserLogin</span>
-                  <span class="parameters">(dhan01,dhan@01)</span>
-                  <em>
-(LoginTest_TC01 Valid User Login)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validUserLogin(dhan6000, dhan@6000)">
-                  </a> <!-- validUserLogin(dhan6000, dhan@6000) -->
-                  <span class="method-name">validUserLogin</span>
-                  <span class="parameters">(dhan6000,dhan@6000)</span>
-                  <em>
-(LoginTest_TC01 Valid User Login)                  </em>
+(RegisterTest_TC01 valid user sign Up )                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -351,40 +357,40 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'invalidUserSignUp')
 data.setCell(0, 2, 'nnd.TestCases.DB_RegisterTest')
-data.setCell(0, 3, 10461);
+data.setCell(0, 3, 11343);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validUserSignUp')
 data.setCell(1, 2, 'nnd.TestCases.DB_RegisterTest')
-data.setCell(1, 3, 10451);
+data.setCell(1, 3, 11052);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'invalidUserSignUp')
 data.setCell(2, 2, 'nnd.TestCases.DB_RegisterTest')
-data.setCell(2, 3, 10406);
+data.setCell(2, 3, 10541);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'inValidUserLogin')
-data.setCell(3, 2, 'nnd.TestCases.DB_LoginTest')
-data.setCell(3, 3, 8500);
+data.setCell(3, 1, 'verifyPurchaseItem')
+data.setCell(3, 2, 'nnd.TestCases.DB_HomeTest')
+data.setCell(3, 3, 7548);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'inValidUserLogin')
+data.setCell(4, 1, 'validUserLogin')
 data.setCell(4, 2, 'nnd.TestCases.DB_LoginTest')
-data.setCell(4, 3, 8473);
+data.setCell(4, 3, 1);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyPurchaseItem')
-data.setCell(5, 2, 'nnd.TestCases.DB_HomeTest')
-data.setCell(5, 3, 8128);
+data.setCell(5, 1, 'validUserLogin')
+data.setCell(5, 2, 'nnd.TestCases.DB_LoginTest')
+data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validUserLogin')
+data.setCell(6, 1, 'inValidUserLogin')
 data.setCell(6, 2, 'nnd.TestCases.DB_LoginTest')
-data.setCell(6, 3, 5504);
+data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'validUserLogin')
+data.setCell(7, 1, 'inValidUserLogin')
 data.setCell(7, 2, 'nnd.TestCases.DB_LoginTest')
-data.setCell(7, 3, 5501);
+data.setCell(7, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -412,108 +418,76 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">nnd.TestCases.DB_LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp(public void nnd.TestCases.DB_LoginTest.inValidUserLogin(java.lang.String,java.lang.String) throws or...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">inValidUserLogin(dhan0001, dhan#0001)</span>
-                <span class="method-start">5301 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">13779 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void nnd.TestCases.DB_LoginTest.inValidUserLogin(java.lang.String,java.lang.String) throws or...)</span>
-                <span class="method-start">13979 ms</span>
+                <span class="method-name">setUp</span>
+                <span class="method-start">7354 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">inValidUserLogin(dhan0002, dhan#0002)</span>
-                <span class="method-start">18257 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">26760 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void nnd.TestCases.DB_LoginTest.validUserLogin(java.lang.String,java.lang.String) throws org....)</span>
-                <span class="method-start">27108 ms</span>
+                <span class="method-name">setUp</span>
+                <span class="method-start">7435 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validUserLogin(dhan01, dhan@01)</span>
-                <span class="method-start">31881 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">37382 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void nnd.TestCases.DB_LoginTest.validUserLogin(java.lang.String,java.lang.String) throws org....)</span>
-                <span class="method-start">37600 ms</span>
+                <span class="method-name">setUp</span>
+                <span class="method-start">7440 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validUserLogin(dhan6000, dhan@6000)</span>
-                <span class="method-start">42897 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">48401 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">nnd.TestCases.DB_HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void nnd.TestCases.DB_HomeTest.verifyPurchaseItem() throws org.apache.poi.openxml4j.exception...)</span>
-                <span class="method-start">48596 ms</span>
+                <span class="method-start">7453 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPurchaseItem</span>
-                <span class="method-start">53075 ms</span>
+                <span class="method-start">10966 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">61206 ms</span>
+                <span class="method-start">18514 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">nnd.TestCases.DB_RegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void nnd.TestCases.DB_RegisterTest.invalidUserSignUp(java.lang.String,java.lang.String) throw...)</span>
-                <span class="method-start">61486 ms</span>
+                <span class="method-start">18714 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidUserSignUp(dhan01, dhan@01)</span>
-                <span class="method-start">65578 ms</span>
+                <span class="method-start">22797 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">75987 ms</span>
+                <span class="method-start">33341 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void nnd.TestCases.DB_RegisterTest.invalidUserSignUp(java.lang.String,java.lang.String) throw...)</span>
-                <span class="method-start">76166 ms</span>
+                <span class="method-start">33536 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidUserSignUp(dhan6000, dhan@6000)</span>
-                <span class="method-start">80915 ms</span>
+                <span class="method-start">39136 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">91376 ms</span>
+                <span class="method-start">50481 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void nnd.TestCases.DB_RegisterTest.validUserSignUp() throws java.lang.InterruptedException, o...)</span>
-                <span class="method-start">91558 ms</span>
+                <span class="method-start">50689 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">validUserSignUp</span>
-                <span class="method-start">96814 ms</span>
+                <span class="method-start">55320 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">108725 ms</span>
+                <span class="method-start">66374 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

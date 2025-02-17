@@ -1,20 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 111.2 s <<< FAILURE! -- in TestSuite
-nnd.TestCases.DB_RegisterTest.validUserSignUp -- Time elapsed: 10.45 s <<< FAILURE!
-java.lang.AssertionError: Signup failed expected [Sign up successful.] but found [This user already exist.]
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 11, Time elapsed: 69.08 s <<< FAILURE! -- in TestSuite
+nnd.TestCases.DB_LoginTest.setUp[public void nnd.TestCases.DB_LoginTest.inValidUserLogin(java.lang.String,java.lang.String) throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException,java.lang.InterruptedException, org.testng.TestRunner@fe87ddd](0) -- Time elapsed: 8.384 s <<< FAILURE!
+java.lang.AssertionError: Website is down or error page displayed.
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at nnd.Pages.DB_RegisterPage.clickSignUp(DB_RegisterPage.java:67)
-	at nnd.TestCases.DB_RegisterTest.validUserSignUp(DB_RegisterTest.java:57)
+	at base.DB_ConnectionSetup.setUp(DB_ConnectionSetup.java:120)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
