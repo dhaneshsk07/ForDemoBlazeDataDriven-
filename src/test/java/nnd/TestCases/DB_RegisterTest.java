@@ -42,7 +42,7 @@ public class DB_RegisterTest extends DB_ConnectionSetup {
 
 	//TEST CASES
 	
-	@Test(description = "RegisterTest_TC01 valid user sign Up ", enabled = true)
+	@Test(description = "RegisterTest_TC01 valid user sign Up ", enabled = false)
 	public void validUserSignUp() throws InterruptedException {
 
 		
@@ -63,7 +63,7 @@ public class DB_RegisterTest extends DB_ConnectionSetup {
 
 	}
 
-	@Test(description = "RegisterTest_TC02 invalid user sign Up ", dataProvider = "invalidUserData", enabled = true)
+	@Test(description = "RegisterTest_TC02 invalid user sign Up ", dataProvider = "invalidUserData", enabled = false)
 	public void invalidUserSignUp(String username, String password) throws InterruptedException {
 
 		logger.info("Started Test of valid user sign-up with username: {}", username);

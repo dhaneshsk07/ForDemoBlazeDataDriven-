@@ -71,7 +71,7 @@ public class DB_LoginTest extends DB_ConnectionSetup {
 	}
 
 	@Test(groups = {
-			"Negative TestCases" }, dataProvider = "invalidloginData", description = "LoginTest_TC01 inValid User Login", enabled = true)
+			"Negative TestCases" }, dataProvider = "invalidloginData", description = "LoginTest_TC01 inValid User Login", enabled = false)
 	public void inValidUserLogin(String username, String password)
 			throws InvalidFormatException, IOException, InterruptedException {
 

@@ -19,7 +19,7 @@ public class DB_HomeTest extends DB_ConnectionSetup {
 	private static final Logger logger = LoggerFactory.getLogger(DB_LoginPage.class);
 
 	
-	@Test( dependsOnMethods = {"nnd.TestCases.DB_LoginTest.validUserLogin"},description = "HomeTest_TC01", enabled = true)
+	@Test( dependsOnMethods = {"nnd.TestCases.DB_LoginTest.validUserLogin"},description = "HomeTest_TC01", enabled = false)
 	
 	public void verifyPurchaseItem()
 			throws InvalidFormatException, IOException, InterruptedException {

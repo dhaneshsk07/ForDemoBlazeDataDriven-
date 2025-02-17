@@ -19,3 +19,6 @@ commit details - DEMO BLAZE
 18 02 2025 01:26 AM Normal Commit after without jenkins file stage('Package') c5
 18 02 2025 01:49 AM Normal Commit after jenkins file modify added extent report index.html c6
 18 02 2025 02:05 AM Normal Commit after after Build Periodically build -1 minute run on jenkins
+18 02 2025 02:05 AM Normal Commit STD 01
+now running pipeline script from jenkins its self not from jenkins file
+18 02 2025 02:47 AM Normal Commit only valid login test are enabled
