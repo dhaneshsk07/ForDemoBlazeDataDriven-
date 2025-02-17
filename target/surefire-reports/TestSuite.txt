@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 104.8 s <<< FAILURE! -- in TestSuite
-nnd.TestCases.DB_RegisterTest.validUserSignUp -- Time elapsed: 10.37 s <<< FAILURE!
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 101.9 s <<< FAILURE! -- in TestSuite
+nnd.TestCases.DB_RegisterTest.validUserSignUp -- Time elapsed: 10.85 s <<< FAILURE!
 java.lang.AssertionError: Signup failed expected [Sign up successful.] but found [This user already exist.]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -10,7 +10,7 @@ java.lang.AssertionError: Signup failed expected [Sign up successful.] but found
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at nnd.Pages.DB_RegisterPage.clickSignUp(DB_RegisterPage.java:67)
-	at nnd.TestCases.DB_RegisterTest.validUserSignUp(DB_RegisterTest.java:59)
+	at nnd.TestCases.DB_RegisterTest.validUserSignUp(DB_RegisterTest.java:60)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
