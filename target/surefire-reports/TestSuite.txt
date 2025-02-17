@@ -1,20 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 94.854 s <<< FAILURE! - in TestSuite
-inValidUserLogin(nnd.TestCases.DB_LoginTest)  Time elapsed: 8.394 s  <<< FAILURE!
-java.lang.AssertionError: Log in failed expected [Log in successful.] but found [User does not exist.]
-	at nnd.TestCases.DB_LoginTest.inValidUserLogin(DB_LoginTest.java:83)
-
-inValidUserLogin(nnd.TestCases.DB_LoginTest)  Time elapsed: 8.409 s  <<< FAILURE!
-java.lang.AssertionError: Log in failed expected [Log in successful.] but found [User does not exist.]
-	at nnd.TestCases.DB_LoginTest.inValidUserLogin(DB_LoginTest.java:83)
-
-validUserSignUp(nnd.TestCases.DB_RegisterTest)  Time elapsed: 11.628 s  <<< FAILURE!
-java.lang.AssertionError: Signup failed expected [Sign up successful.] but found [This user already exist.]
-	at nnd.TestCases.DB_RegisterTest.validUserSignUp(DB_RegisterTest.java:55)
-
-validUserSignUp(nnd.TestCases.DB_RegisterTest)  Time elapsed: 10.39 s  <<< FAILURE!
-java.lang.AssertionError: Signup failed expected [Sign up successful.] but found [This user already exist.]
-	at nnd.TestCases.DB_RegisterTest.validUserSignUp(DB_RegisterTest.java:55)
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 115.6 s -- in TestSuite

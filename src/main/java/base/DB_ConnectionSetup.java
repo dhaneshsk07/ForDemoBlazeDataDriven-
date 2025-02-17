@@ -20,7 +20,10 @@ import org.testng.annotations.BeforeMethod;
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.Logger;
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 import nnd.Utilities.DB_ConfigReader;
+
+
 
 import org.testng.Assert;
 import org.testng.ITestContext;
@@ -32,6 +35,9 @@ import org.testng.ITestContext;
 public class DB_ConnectionSetup {
 	protected WebDriver driver;
 	WebDriverWait wait;
+	
+	// Logger implementation
+	private static final Logger logger = (Logger) LoggerFactory.getLogger(DB_ConnectionSetup.class);
 
 	@BeforeMethod
 	public void setUp(Method method, ITestContext context) {
@@ -98,7 +104,7 @@ public class DB_ConnectionSetup {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		// explicit wait
-		waitForSomeTime();
+		waitForSomeTime(); 
 
 		
 		//ADD THIS BELOW TO RUN OPENCART PROJECT
@@ -129,7 +135,7 @@ public class DB_ConnectionSetup {
 	
 
 	
-
+/*
 	@AfterMethod
 	public void tearDown() {
 
@@ -139,6 +145,16 @@ public class DB_ConnectionSetup {
 		}
 
 	}
+	*/
+	
+	
+	 @AfterMethod
+	    public void tearDown() {
+	        if (driver != null) {
+	            driver.quit();
+	            logger.info("Driver closed after test.");
+	        }
+	    }
 
 	// Custom method to simulate a delay
 	public void waitForSomeTime() {

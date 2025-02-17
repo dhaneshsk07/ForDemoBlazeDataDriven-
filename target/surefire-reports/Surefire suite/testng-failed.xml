@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
-  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
       <class name="nnd.TestCases.DB_RegisterTest">
         <methods>
           <include name="tearDown"/>
-          <include name="validUserSignUp" invocation-numbers="0 1"/>
+          <include name="invalidUserSignUp"/>
+          <include name="validUserSignUp"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- nnd.TestCases.DB_RegisterTest -->
@@ -14,9 +15,17 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="inValidUserLogin" invocation-numbers="0 1"/>
+          <include name="validUserLogin"/>
+          <include name="inValidUserLogin"/>
         </methods>
       </class> <!-- nnd.TestCases.DB_LoginTest -->
+      <class name="nnd.TestCases.DB_HomeTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyPurchaseItem"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nnd.TestCases.DB_HomeTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

@@ -14,8 +14,6 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-
-import nnd.Utilities.Screenshot;
 import nnd.Utilities.DB_ScreenshotExtent;
 
 public class DB_MyTestListener implements ITestListener {
@@ -40,27 +38,27 @@ public class DB_MyTestListener implements ITestListener {
 
 		test = extent.createTest(fullTestName);
 
-		test.log(Status.INFO, " Test Started : " + result.getName()); // exp_code
-		test.log(Status.INFO, " Test CREDENTIALS SET : " + invocationCount);
-		test.log(Status.INFO, " Test DESCRIPTION : " + description); // exp_code
+		test.log(Status.INFO, " TestCase FullName : " + fullTestName);
+		test.log(Status.INFO, " TestCase Name : " + result.getName()); // exp_code
+		test.log(Status.INFO, " TestCase Credential Set Excel Row No. : " + invocationCount);
+		test.log(Status.INFO, " Testcase Description : " + description); // exp_code
 
-		test.log(Status.PASS, " Test PASSED: " + result.getName()); // exp_code
-		test.log(Status.FAIL, " Test FAILED: " + result.getName()); // exp_code
+		
+		//test.log(Status.PASS, " Test PASSED: " + result.getName()); // exp_code
+		//test.log(Status.FAIL, " Test FAILED: " + result.getName()); // exp_code
 
 		// for console
-		System.out.println("Test Started : " + result.getName());
+		System.out.println("Test Name: " + result.getName());
 		System.out.println("Test Description : " + description);
 		System.out.println("Test NAME WITH INVOCATION COUNT : " + fullTestName);
-		
-		
+
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
 
 		test.pass("Test passed" + result.getName());
-
-		test.log(Status.INFO, " Test Successfull : " + result.getName()); // exp_code
+		//test.log(Status.INFO, " Test Successfull info  : " + result.getName()); // exp_code
 
 		// for console
 		System.out.println("Test Passed : " + result.getName());
@@ -68,13 +66,15 @@ public class DB_MyTestListener implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		String screenshotPath=null;
-		
+		String screenshotPath = null;
+
 		// Extent report
 		test.fail("Test failed : " + result.getName());
 
 		// Extent report
-		test.fail("Failure Reason: " + result.getThrowable());
+		test.info("Failure Reason: " + result.getThrowable());
+		
+		
 
 		// Ensure the driver is initialized, typically from your test setup
 		driver = (WebDriver) result.getTestContext().getAttribute("driver"); // Retrieve driver from the context
@@ -84,7 +84,7 @@ public class DB_MyTestListener implements ITestListener {
 			// Screenshot sc = new Screenshot(driver);
 			DB_ScreenshotExtent sc = new DB_ScreenshotExtent(driver);
 			try {
-				//sc.takeScreenshot(result);
+				// sc.takeScreenshot(result);
 
 				// EXPERIEMENTAL 17022025
 				// Capture screenshot and return path
@@ -106,10 +106,9 @@ public class DB_MyTestListener implements ITestListener {
 			System.out.println("Driver is not available for taking the screenshot.");
 		}
 
-		
-
-// Ensure the screenshot is actually saved before attaching
+		// Ensure the screenshot is actually saved before attaching
 		// CODE TO SHOW SCREENSHOT IN EXTENT REPORT
+		
 		File screenshotFile = new File(screenshotPath);
 		if (screenshotFile.exists()) {
 			test.addScreenCaptureFromPath(screenshotPath);
@@ -153,24 +152,19 @@ public class DB_MyTestListener implements ITestListener {
 		if (buildNumber != null) {
 
 			System.out.println("the build number is : " + buildNumber);
-			// String reportPath = System.getProperty("user.dir") + "/reports/ExtentReport_"
-			// + buildNumber + ".html";
 			
-			//demo blaze 
-			String reportPath = System.getProperty("user.dir") + "\\" + "test-output" + "\\" + "extent-Reports" + buildNumber
-					+ ".html";
-
+			// demo blaze
+			String reportPath = System.getProperty("user.dir") + "\\" + "test-output" + "\\" + "extent-Reports"
+					+ buildNumber + ".html";
+			//Extent Report attachment
 			ExtentSparkReporter sparkReporterGenkins = new ExtentSparkReporter(reportPath);
 			extent = new ExtentReports();
 			extent.attachReporter(sparkReporterGenkins);
 
 		} else {
 
+			//if no build no. is generated
 			System.out.println("the build number is : " + buildNumber);
-			/*
-			String reportPath = System.getProperty("user.dir") + "\\" + "reports" + "\\" + "ExtentReport_"
-					+ "localBuild" + ".html";
-			*/
 			
 			String reportPath = System.getProperty("user.dir") + "\\" + "test-output" + "\\" + "extent-Reports"
 					+ "localBuild" + ".html";
@@ -182,27 +176,29 @@ public class DB_MyTestListener implements ITestListener {
 
 		// for ECLIPSE
 		String extentPath = "C:\\Users\\dhane\\eclipse-workspace\\DemoBlazeDataDriven14022025\\test-output\\extent-Reports\\";
+		
 		// Extent reports- Use ExtentSparkReporter instead of ExtentHtmlReporter
 		// to removing duplicationof extentReport.html file
 		String reportFilePath = "extent-report-" + System.currentTimeMillis() + ".html"; // or use build number
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(extentPath + reportFilePath);
+		
 		// extent = new ExtentReports();
 		sparkReporter.config().setTheme(Theme.STANDARD);
 		extent.attachReporter(sparkReporter);
 
 		// extent report
-		// test.info("Test Suite Started: " + context.getName());
+		//test.info("Test Suite Started: " + context.getName());
 		System.out.println("Test Suite Started: " + context.getName());
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
 
+		test.info("Test Suite Finished: " + context.getName());
+		
 		// extent report - Generate the report at the end of test execution
 		extent.flush();
-
-		test.info("Test Suite Finished: " + context.getName());
-
+		
 		// for console
 		System.out.println("Test Suite Finished: " + context.getName());
 	}
