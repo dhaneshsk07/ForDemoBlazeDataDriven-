@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 102.6 s <<< FAILURE! -- in TestSuite
-nnd.TestCases.DB_RegisterTest.validUserSignUp -- Time elapsed: 10.39 s <<< FAILURE!
-java.lang.AssertionError: Signup failed expected [Sign up successful.] but found [This user already exist.]
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.69 s <<< FAILURE! -- in TestSuite
+nnd.TestCases.DB_LoginTest.validUserLogin[dhan01, dhan@01](1) -- Time elapsed: 6.028 s <<< FAILURE!
+java.lang.AssertionError: Login failed expected [Welcome dhan01] but found []
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
-	at nnd.Pages.DB_RegisterPage.clickSignUp(DB_RegisterPage.java:67)
-	at nnd.TestCases.DB_RegisterTest.validUserSignUp(DB_RegisterTest.java:60)
+	at nnd.Pages.DB_LoginPage.verifyLogin(DB_LoginPage.java:90)
+	at nnd.TestCases.DB_LoginTest.validUserLogin(DB_LoginTest.java:69)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
