@@ -17,3 +17,4 @@ commit details - DEMO BLAZE
 18 02 2025 01:03 AM Normal Commit after 8 TC success c3a 
 18 02 2025 01:18 AM Normal Commit after 8 TC success c4
 18 02 2025 01:26 AM Normal Commit after without jenkins file stage('Package') c5
+18 02 2025 01:49 AM Normal Commit after jenkins file modify added extent report index.html c6
