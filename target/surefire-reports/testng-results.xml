@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-18T00:43:38 IST" name="Surefire suite" finished-at="2025-02-18T00:45:30 IST" duration-ms="111371">
+  <suite started-at="2025-02-18T00:51:48 IST" name="Surefire suite" finished-at="2025-02-18T00:53:38 IST" duration-ms="109711">
     <groups>
       <group name="Positive TestCases">
         <method signature="DB_LoginTest.validUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" name="validUserLogin" class="nnd.TestCases.DB_LoginTest"/>
@@ -11,9 +11,9 @@
         <method signature="DB_LoginTest.inValidUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" name="inValidUserLogin" class="nnd.TestCases.DB_LoginTest"/>
       </group> <!-- Negative TestCases -->
     </groups>
-    <test started-at="2025-02-18T00:43:38 IST" name="Surefire test" finished-at="2025-02-18T00:45:30 IST" duration-ms="111371">
+    <test started-at="2025-02-18T00:51:48 IST" name="Surefire test" finished-at="2025-02-18T00:53:38 IST" duration-ms="109711">
       <class name="nnd.TestCases.DB_HomeTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_HomeTest@2a65fe7c]" started-at="2025-02-18T00:44:31 IST" name="setUp" finished-at="2025-02-18T00:44:34 IST" duration-ms="3432" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_HomeTest@2a65fe7c]" started-at="2025-02-18T00:52:37 IST" name="setUp" finished-at="2025-02-18T00:52:42 IST" duration-ms="4479" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,24 +22,24 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@632c3f55]]>
+                <![CDATA[org.testng.TestRunner@6076c66]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyPurchaseItem()[pri:0, instance:nnd.TestCases.DB_HomeTest@2a65fe7c]" started-at="2025-02-18T00:44:34 IST" name="verifyPurchaseItem" description="HomeTest_TC01" finished-at="2025-02-18T00:44:42 IST" depends-on-methods="nnd.TestCases.DB_LoginTest.validUserLogin" duration-ms="7843" status="PASS">
+        <test-method signature="verifyPurchaseItem()[pri:0, instance:nnd.TestCases.DB_HomeTest@2a65fe7c]" started-at="2025-02-18T00:52:42 IST" name="verifyPurchaseItem" description="HomeTest_TC01" finished-at="2025-02-18T00:52:50 IST" depends-on-methods="nnd.TestCases.DB_LoginTest.validUserLogin" duration-ms="8128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPurchaseItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_HomeTest@2a65fe7c]" started-at="2025-02-18T00:44:42 IST" name="tearDown" finished-at="2025-02-18T00:44:42 IST" duration-ms="217" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_HomeTest@2a65fe7c]" started-at="2025-02-18T00:52:50 IST" name="tearDown" finished-at="2025-02-18T00:52:50 IST" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- nnd.TestCases.DB_HomeTest -->
       <class name="nnd.TestCases.DB_LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:43:39 IST" name="setUp" finished-at="2025-02-18T00:43:47 IST" duration-ms="7622" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:51:49 IST" name="setUp" finished-at="2025-02-18T00:51:54 IST" duration-ms="5301" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,14 +48,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@632c3f55]]>
+                <![CDATA[org.testng.TestRunner@6076c66]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="inValidUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:43:47 IST" name="inValidUserLogin" description="LoginTest_TC01 inValid User Login" data-provider="invalidloginData" finished-at="2025-02-18T00:43:55 IST" duration-ms="8557" status="PASS">
+        <test-method signature="inValidUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:51:54 IST" name="inValidUserLogin" description="LoginTest_TC01 inValid User Login" data-provider="invalidloginData" finished-at="2025-02-18T00:52:02 IST" duration-ms="8473" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,11 +71,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inValidUserLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:43:55 IST" name="tearDown" finished-at="2025-02-18T00:43:56 IST" duration-ms="199" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:52:02 IST" name="tearDown" finished-at="2025-02-18T00:52:03 IST" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:43:56 IST" name="setUp" finished-at="2025-02-18T00:44:01 IST" duration-ms="5378" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:52:03 IST" name="setUp" finished-at="2025-02-18T00:52:07 IST" duration-ms="4278" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,14 +84,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@632c3f55]]>
+                <![CDATA[org.testng.TestRunner@6076c66]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="inValidUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:44:01 IST" name="inValidUserLogin" description="LoginTest_TC01 inValid User Login" data-provider="invalidloginData" finished-at="2025-02-18T00:44:09 IST" duration-ms="8472" status="PASS">
+        <test-method signature="inValidUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:52:07 IST" name="inValidUserLogin" description="LoginTest_TC01 inValid User Login" data-provider="invalidloginData" finished-at="2025-02-18T00:52:15 IST" duration-ms="8500" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,11 +107,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inValidUserLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:44:09 IST" name="tearDown" finished-at="2025-02-18T00:44:10 IST" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:52:15 IST" name="tearDown" finished-at="2025-02-18T00:52:16 IST" duration-ms="254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:44:10 IST" name="setUp" finished-at="2025-02-18T00:44:14 IST" duration-ms="4464" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:52:16 IST" name="setUp" finished-at="2025-02-18T00:52:21 IST" duration-ms="4773" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -120,14 +120,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@632c3f55]]>
+                <![CDATA[org.testng.TestRunner@6076c66]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:44:14 IST" name="validUserLogin" description="LoginTest_TC01 Valid User Login" data-provider="validloginData" finished-at="2025-02-18T00:44:20 IST" duration-ms="5520" status="PASS">
+        <test-method signature="validUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:52:21 IST" name="validUserLogin" description="LoginTest_TC01 Valid User Login" data-provider="validloginData" finished-at="2025-02-18T00:52:26 IST" duration-ms="5501" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,11 +143,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUserLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:44:20 IST" name="tearDown" finished-at="2025-02-18T00:44:20 IST" duration-ms="212" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:52:26 IST" name="tearDown" finished-at="2025-02-18T00:52:26 IST" duration-ms="218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:44:20 IST" name="setUp" finished-at="2025-02-18T00:44:25 IST" duration-ms="5171" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:52:26 IST" name="setUp" finished-at="2025-02-18T00:52:32 IST" duration-ms="5297" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,14 +156,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@632c3f55]]>
+                <![CDATA[org.testng.TestRunner@6076c66]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:44:25 IST" name="validUserLogin" description="LoginTest_TC01 Valid User Login" data-provider="validloginData" finished-at="2025-02-18T00:44:31 IST" duration-ms="5469" status="PASS">
+        <test-method signature="validUserLogin(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:52:32 IST" name="validUserLogin" description="LoginTest_TC01 Valid User Login" data-provider="validloginData" finished-at="2025-02-18T00:52:37 IST" duration-ms="5504" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -179,13 +179,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUserLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:44:31 IST" name="tearDown" finished-at="2025-02-18T00:44:31 IST" duration-ms="201" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_LoginTest@22555ebf]" started-at="2025-02-18T00:52:37 IST" name="tearDown" finished-at="2025-02-18T00:52:37 IST" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- nnd.TestCases.DB_LoginTest -->
       <class name="nnd.TestCases.DB_RegisterTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:44:42 IST" name="setUp" finished-at="2025-02-18T00:44:47 IST" duration-ms="4529" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:52:50 IST" name="setUp" finished-at="2025-02-18T00:52:54 IST" duration-ms="4092" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -194,14 +194,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@632c3f55]]>
+                <![CDATA[org.testng.TestRunner@6076c66]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidUserSignUp(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:44:47 IST" name="invalidUserSignUp" description="RegisterTest_TC02 invalid user sign Up " data-provider="invalidUserData" finished-at="2025-02-18T00:44:57 IST" duration-ms="10556" status="PASS">
+        <test-method signature="invalidUserSignUp(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:52:54 IST" name="invalidUserSignUp" description="RegisterTest_TC02 invalid user sign Up " data-provider="invalidUserData" finished-at="2025-02-18T00:53:05 IST" duration-ms="10406" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -217,11 +217,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUserSignUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:44:57 IST" name="tearDown" finished-at="2025-02-18T00:44:58 IST" duration-ms="220" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:53:05 IST" name="tearDown" finished-at="2025-02-18T00:53:05 IST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:44:58 IST" name="setUp" finished-at="2025-02-18T00:45:02 IST" duration-ms="4233" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:53:05 IST" name="setUp" finished-at="2025-02-18T00:53:10 IST" duration-ms="4749" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -230,14 +230,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@632c3f55]]>
+                <![CDATA[org.testng.TestRunner@6076c66]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidUserSignUp(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:45:02 IST" name="invalidUserSignUp" description="RegisterTest_TC02 invalid user sign Up " data-provider="invalidUserData" finished-at="2025-02-18T00:45:12 IST" duration-ms="10462" status="PASS">
+        <test-method signature="invalidUserSignUp(java.lang.String,java.lang.String)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:53:10 IST" name="invalidUserSignUp" description="RegisterTest_TC02 invalid user sign Up " data-provider="invalidUserData" finished-at="2025-02-18T00:53:20 IST" duration-ms="10461" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -253,11 +253,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUserSignUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:45:12 IST" name="tearDown" finished-at="2025-02-18T00:45:13 IST" duration-ms="222" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:53:20 IST" name="tearDown" finished-at="2025-02-18T00:53:20 IST" duration-ms="182" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:45:13 IST" name="setUp" finished-at="2025-02-18T00:45:17 IST" duration-ms="4673" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:53:20 IST" name="setUp" finished-at="2025-02-18T00:53:25 IST" duration-ms="5256" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -266,14 +266,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@632c3f55]]>
+                <![CDATA[org.testng.TestRunner@6076c66]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validUserSignUp()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:45:17 IST" name="validUserSignUp" description="RegisterTest_TC01 valid user sign Up " finished-at="2025-02-18T00:45:28 IST" duration-ms="10413" status="FAIL">
+        <test-method signature="validUserSignUp()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:53:25 IST" name="validUserSignUp" description="RegisterTest_TC01 valid user sign Up " finished-at="2025-02-18T00:53:36 IST" duration-ms="10451" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Signup failed expected [Sign up successful.] but found [This user already exist.]]]>
@@ -324,7 +324,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUserSignUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:45:30 IST" name="tearDown" finished-at="2025-02-18T00:45:30 IST" duration-ms="213" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nnd.TestCases.DB_RegisterTest@36ebc363]" started-at="2025-02-18T00:53:37 IST" name="tearDown" finished-at="2025-02-18T00:53:38 IST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -62,7 +62,7 @@ public class DB_RegisterPage {
 		String actual=alert.getText();
 		alert.accept();
 		
-		String expected ="Sign up successful." ; 
+		String expected ="Sign up successful." ;  
 		
 		Assert.assertEquals(actual,expected ,"Signup failed");
 		
